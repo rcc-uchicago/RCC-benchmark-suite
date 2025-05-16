@@ -1,0 +1,230 @@
+IOR-3.2.0: MPI Coordinated Test of Parallel I/O
+Began               : Thu Dec 12 01:14:03 2019
+Command line        : ./ior -f script
+Machine             : Linux midway2-0634.rcc.local 3.10.0-957.12.2.el7.x86_64 #1 SMP Tue May 14 15:23:27 CDT 2019 x86_64
+Using synchronized MPI timer
+Start time skew across all tasks: 0.00 sec
+TestID              : 0
+StartTime           : Thu Dec 12 01:14:03 2019
+Path                : /project2/rcc/yuxing/benchmark-2019/ior/tests
+FS                  : 3822.9 TiB   Used FS: 67.1%   Inodes: 619.9 Mi   Used Inodes: 76.1%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : IOR_Posix_10k
+access              : file-per-process
+type                : independent
+segments            : 500
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 8
+clients per node    : 1
+repetitions         : 2
+xfersize            : 10000 bytes
+blocksize           : 95.37 MiB
+aggregate filesize  : 372.53 GiB
+
+Results: 
+Using Time Stamp 1576134843 (0x5df1e8bb) for Data Signature
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu Dec 12 01:14:03 2019
+write     6052       97656      9.77       0.415192   62.62      0.001868   63.03      0   
+Commencing read performance test: Thu Dec 12 01:15:06 2019
+read      6185       97656      9.77       0.004859   61.67      0.000350   61.67      0   
+remove    -          -          -          -          -          -          0.080440   0   
+Using Time Stamp 1576134967 (0x5df1e937) for Data Signature
+Commencing write performance test: Thu Dec 12 01:16:08 2019
+write     3645       97656      9.77       0.164250   104.49     0.001273   104.66     1   
+Commencing read performance test: Thu Dec 12 01:17:52 2019
+read      5331       97656      9.77       0.004914   71.55      0.000308   71.56      1   
+remove    -          -          -          -          -          -          0.065600   1   
+Max Write: 6051.72 MiB/sec (6345.69 MB/sec)
+Max Read:  6185.16 MiB/sec (6485.62 MB/sec)
+TestID              : 1
+StartTime           : Thu Dec 12 01:19:04 2019
+Path                : /project2/rcc/yuxing/benchmark-2019/ior/tests
+FS                  : 3822.9 TiB   Used FS: 67.2%   Inodes: 619.9 Mi   Used Inodes: 76.1%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : IOR_Posix_100k
+access              : file-per-process
+type                : independent
+segments            : 500
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 8
+clients per node    : 1
+repetitions         : 2
+xfersize            : 100000 bytes
+blocksize           : 95.37 MiB
+aggregate filesize  : 372.53 GiB
+
+Results: 
+Using Time Stamp 1576135144 (0x5df1e9e8) for Data Signature
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu Dec 12 01:19:04 2019
+write     7454       97656      97.66      0.038267   51.13      0.001214   51.17      0   
+Commencing read performance test: Thu Dec 12 01:19:55 2019
+read      5667       97656      97.66      0.006374   67.30      0.000361   67.31      0   
+remove    -          -          -          -          -          -          0.071278   0   
+Using Time Stamp 1576135262 (0x5df1ea5e) for Data Signature
+Commencing write performance test: Thu Dec 12 01:21:02 2019
+write     7081       97656      97.66      0.046696   53.82      0.000948   53.87      1   
+Commencing read performance test: Thu Dec 12 01:21:56 2019
+read      5637       97656      97.66      0.005715   67.67      0.000465   67.67      1   
+remove    -          -          -          -          -          -          0.072580   1   
+Max Write: 7454.40 MiB/sec (7816.51 MB/sec)
+Max Read:  5667.23 MiB/sec (5942.52 MB/sec)
+TestID              : 2
+StartTime           : Thu Dec 12 01:23:04 2019
+Path                : /project2/rcc/yuxing/benchmark-2019/ior/tests
+FS                  : 3822.9 TiB   Used FS: 67.2%   Inodes: 619.9 Mi   Used Inodes: 76.1%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : IOR_Posix_1m
+access              : file-per-process
+type                : independent
+segments            : 500
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 8
+clients per node    : 1
+repetitions         : 2
+xfersize            : 1000000 bytes
+blocksize           : 95.37 MiB
+aggregate filesize  : 372.53 GiB
+
+Results: 
+Using Time Stamp 1576135384 (0x5df1ead8) for Data Signature
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu Dec 12 01:23:05 2019
+write     7359       97656      976.56     0.746578   51.09      0.001105   51.84      0   
+Commencing read performance test: Thu Dec 12 01:23:56 2019
+read      5623       97656      976.56     0.006454   67.83      0.000630   67.84      0   
+remove    -          -          -          -          -          -          0.074929   0   
+Using Time Stamp 1576135504 (0x5df1eb50) for Data Signature
+Commencing write performance test: Thu Dec 12 01:25:05 2019
+write     7139       97656      976.56     1.13       52.30      0.001098   53.43      1   
+Commencing read performance test: Thu Dec 12 01:25:57 2019
+read      5576       97656      976.56     0.006493   68.40      0.000770   68.41      1   
+remove    -          -          -          -          -          -          0.100991   1   
+Max Write: 7359.05 MiB/sec (7716.52 MB/sec)
+Max Read:  5623.02 MiB/sec (5896.17 MB/sec)
+TestID              : 3
+StartTime           : Thu Dec 12 01:27:06 2019
+Path                : /project2/rcc/yuxing/benchmark-2019/ior/tests
+FS                  : 3822.9 TiB   Used FS: 67.2%   Inodes: 619.9 Mi   Used Inodes: 76.1%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : IOR_Posix_10m
+access              : file-per-process
+type                : independent
+segments            : 500
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 8
+clients per node    : 1
+repetitions         : 2
+xfersize            : 9.54 MiB
+blocksize           : 95.37 MiB
+aggregate filesize  : 372.53 GiB
+
+Results: 
+Using Time Stamp 1576135626 (0x5df1ebca) for Data Signature
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu Dec 12 01:27:06 2019
+write     7151       97656      9766       0.121834   53.22      0.001984   53.35      0   
+Commencing read performance test: Thu Dec 12 01:27:59 2019
+read      5498       97656      9766       0.006881   69.38      0.000966   69.38      0   
+remove    -          -          -          -          -          -          0.082517   0   
+Using Time Stamp 1576135749 (0x5df1ec45) for Data Signature
+Commencing write performance test: Thu Dec 12 01:29:09 2019
+write     7226       97656      9766       0.048845   52.74      0.001623   52.79      1   
+Commencing read performance test: Thu Dec 12 01:30:01 2019
+read      5507       97656      9766       0.005794   69.26      0.001088   69.27      1   
+remove    -          -          -          -          -          -          0.080047   1   
+Max Write: 7226.28 MiB/sec (7577.30 MB/sec)
+Max Read:  5506.99 MiB/sec (5774.50 MB/sec)
+TestID              : 4
+StartTime           : Thu Dec 12 01:31:11 2019
+Path                : /project2/rcc/yuxing/benchmark-2019/ior/tests
+FS                  : 3822.9 TiB   Used FS: 67.2%   Inodes: 619.9 Mi   Used Inodes: 76.1%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : IOR_Posix_100m
+access              : file-per-process
+type                : independent
+segments            : 500
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+tasks               : 8
+clients per node    : 1
+repetitions         : 2
+xfersize            : 95.37 MiB
+blocksize           : 95.37 MiB
+aggregate filesize  : 372.53 GiB
+
+Results: 
+Using Time Stamp 1576135871 (0x5df1ecbf) for Data Signature
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu Dec 12 01:31:11 2019
+write     7141       97656      97656      0.121443   53.30      0.001863   53.42      0   
+Commencing read performance test: Thu Dec 12 01:32:04 2019
+read      5362       97656      97656      0.005780   71.14      0.001272   71.14      0   
+remove    -          -          -          -          -          -          0.075270   0   
+Using Time Stamp 1576135995 (0x5df1ed3b) for Data Signature
+Commencing write performance test: Thu Dec 12 01:33:15 2019
+write     7212       97656      97656      0.045805   52.85      0.001767   52.89      1   
+Commencing read performance test: Thu Dec 12 01:34:08 2019
+read      5756       97656      97656      0.005593   66.26      0.001410   66.27      1   
+remove    -          -          -          -          -          -          0.080093   1   
+Max Write: 7211.92 MiB/sec (7562.25 MB/sec)
+Max Read:  5756.45 MiB/sec (6036.08 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        6051.72    3644.87    4848.29    1203.43  634568.89  382192.19  508380.54  126188.35   83.84715     0      8   1    2   1     1        1         0    0    500 100000000    10000  381469.7 POSIX      0
+read         6185.16    5330.91    5758.04     427.13  648561.51  558986.26  603773.89   44787.62   66.61653     0      8   1    2   1     1        1         0    0    500 100000000    10000  381469.7 POSIX      0
+write        7454.40    7081.45    7267.92     186.48   78165.08   74254.34   76209.71    1955.37   52.52133     1      8   1    2   1     1        1         0    0    500 100000000   100000  381469.7 POSIX      0
+read         5667.23    5637.03    5652.13      15.10   59425.21   59108.54   59266.87     158.34   67.49181     1      8   1    2   1     1        1         0    0    500 100000000   100000  381469.7 POSIX      0
+write        7359.05    7139.45    7249.25     109.80    7716.52    7486.26    7601.39     115.13   52.63404     2      8   1    2   1     1        1         0    0    500 100000000  1000000  381469.7 POSIX      0
+read         5623.02    5576.31    5599.67      23.36    5896.17    5847.19    5871.68      24.49   68.12484     2      8   1    2   1     1        1         0    0    500 100000000  1000000  381469.7 POSIX      0
+write        7226.28    7150.65    7188.47      37.81     757.73     749.80     753.77       3.96   53.06838     3      8   1    2   1     1        1         0    0    500 100000000 10000000  381469.7 POSIX      0
+read         5506.99    5498.00    5502.50       4.50     577.45     576.51     576.98       0.47   69.32672     3      8   1    2   1     1        1         0    0    500 100000000 10000000  381469.7 POSIX      0
+write        7211.92    7140.61    7176.27      35.66      75.62      74.87      75.25       0.37   53.15843     4      8   1    2   1     1        1         0    0    500 100000000 100000000  381469.7 POSIX      0
+read         5756.45    5362.08    5559.27     197.18      60.36      56.23      58.29       2.07   68.70515     4      8   1    2   1     1        1         0    0    500 100000000 100000000  381469.7 POSIX      0
+Finished            : Thu Dec 12 01:35:15 2019
