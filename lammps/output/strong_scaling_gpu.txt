@@ -1,0 +1,6 @@
+NumberOfMPITasks NumNodes NumGPUs TPS
+1                1         1      8.2 
+8                1         4     15.1 
+32               2         8     29.4 
+64               4        16     57.0 
+128              8        16     95.0 

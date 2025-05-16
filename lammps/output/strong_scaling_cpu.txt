@@ -1,0 +1,6 @@
+NumberOfMPITasks NumNodes TPS
+16               1         4.2 
+32               1         8.1 
+64               2        14.0 
+128              4        23.5 
+256              8        40.4 
