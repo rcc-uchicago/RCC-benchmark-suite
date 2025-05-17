@@ -24,6 +24,7 @@ module load mpich/4.1.2+gcc-12.2.0 cuda/12.2 mkl/2024.2 cmake/3.26
 export CC=mpicc
 export CXX=mpicxx
 
+# For KOKKOS package
 # A100: Kokkos_ARCH_AMPERE80=ON
 # A40:  Kokkos_ARCH_AMPERE86=ON
 # H100: Kokkos_ARCH_HOPPER90=ON

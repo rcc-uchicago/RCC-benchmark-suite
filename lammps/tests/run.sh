@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=gadget-bench
+#SBATCH --job-name=lammps-bench
 #SBATCH --account=rcc-staff
-#SBATCH --time=12:00:00
+#SBATCH --time=4:00:00
 #SBATCH --partition=gpu
-#SBATCH --nodes=1
+#SBATCH --nodes=8
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=128GB
 #SBATCH --gres=gpu:4
@@ -65,9 +65,15 @@ do
   # scaling up the problem size with the number of nodes
   r=$nodes
   do
-    for ppn in 32
+    for ppn in 32 16 8 4
     do
       n=$(( nodes * ppn ))
+
+      # num threads to occupy all the cores allocated
+      nt=$(( total_cpus_per_node / ppn ))
+
+      export OMP_NUM_THREADS=$nt
+
       mpirun -np $n -ppn $ppn $LMP_BINARY -in in.$input -v x $r -v y 1 -v z 1 -v t 200 \
         -log log.$input.n-$n.ppn-$ppn.r-$r
     done

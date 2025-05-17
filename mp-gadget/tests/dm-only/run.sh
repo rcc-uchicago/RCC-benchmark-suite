@@ -32,8 +32,12 @@ do
     nt=$(( total_cpus_per_node / ppn ))
 
     export OMP_NUM_THREADS=$nt
-    mpirun -np $n -ppn $ppn --bind-to numa --map-by numa $GENIC_BINARY paramfile.genic > initial_bc.n-$n.ppn-$ppn.t-$nt
-    mpirun -np $n -ppn $ppn --bind-to numa --map-by numa $GADGET_BINARY paramfile.gadget > log.n-$n.ppn-$ppn.t-$nt
+
+    # generate the initial conditions
+    mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GENIC_BINARY paramfile.genic > initial_bc.n-$n.ppn-$ppn.t-$nt
+
+    # run the simulation
+    mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GADGET_BINARY paramfile.gadget > out.n-$n.ppn-$ppn.t-$nt
     cp output/cpu.txt log.n-$n.ppn-$ppn.t-$nt
   done
 done
