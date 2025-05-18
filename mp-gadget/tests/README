@@ -13,4 +13,4 @@ The performance of a run is measured by the time it takes to reach the TimeMax v
 The output/cpu.txt file contains the elapsed time at the final step, which can be converted
 to the performance in term of timesteps/s = number_of_timesteps / elapsed_time.
 
-
+Run the script get_tps.sh with the file output/cpu.txt to get the performance.

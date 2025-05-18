@@ -17,6 +17,8 @@ LAMMPS is expected to give close to linear strong scaling up to 8 nodes (256 MPI
 with and without GPU acceleration for in.lj and in.chain.scaled, and weak scaling efficiency
 more than 80% up to 8 nodes.
 
+The script get_perf.sh shows how to get the performance of a run from the log file.
+
 What to submit:
 - all the log files from the runs
 - the 2 plots showing
