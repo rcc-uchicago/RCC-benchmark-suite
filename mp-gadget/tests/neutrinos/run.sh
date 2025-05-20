@@ -38,7 +38,7 @@ do
 
     # run the simulation
     mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GADGET_BINARY paramfile.gadget > out.n-$n.ppn-$ppn.t-$nt
-    cp output/cpu.txt log-n-$n.ppn-$ppn.t-$nt
+    cp output/cpu.txt log.n-$n.ppn-$ppn.t-$nt
   done
 done
 

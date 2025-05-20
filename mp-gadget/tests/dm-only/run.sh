@@ -5,7 +5,7 @@
 #SBATCH --partition=caslake
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=48
-#SBATCH --mem=64GB
+#SBATCH --mem=128GB
 #SBATCH --output=output-%J.txt
 #SBATCH --error=error-%J.txt
 
