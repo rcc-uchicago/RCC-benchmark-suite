@@ -1,6 +1,6 @@
-NumberOfMPITasks NumNodes NumGPUs TPS
-1                1         1      4.2 
-4                1         4     14.1 
-8                2         8     28.2 
-16               4        16     54.0 
-32               8        32    100.0 
+nodes ppn num_tasks  num_gpus_per_node TPS
+1     1   1          1                4.2 
+1     4   4          4               14.1 
+2     4   8          4               28.2 
+4     4  16          4               54.0 
+8     4  32          4              100.0 
