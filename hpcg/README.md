@@ -12,7 +12,7 @@ these applications.
 
 This directory is structured as follows:
 
-- [build](/build):
+- [build](build):
   + [build.sh](/build/build.sh): script to build different variants of HPCG.
     **Important**: please remember to adjust dependencies in this script
     according to your environment before running it. 
