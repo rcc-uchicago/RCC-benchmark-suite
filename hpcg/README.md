@@ -13,31 +13,31 @@ these applications.
 This directory is structured as follows:
 
 - [build](build):
-  + [build.sh](/build/build.sh): script to build different variants of HPCG.
+  + [build.sh](build/build.sh): script to build different variants of HPCG.
     **Important**: please remember to adjust dependencies in this script
     according to your environment before running it. 
-  + [clean.sh](/build/clean.sh): removes **everything** built by the script
+  + [clean.sh](build/clean.sh): removes **everything** built by the script
     above and leaves the directory in a clean slate.
-  + [code](/build/code): source code and respective SHA256 checksum for HPCG 3.1.
-  + [files](/build/files): custom HPCG Makefiles used by RCC for tests. Vendors
+  + [code](build/code): source code and respective SHA256 checksum for HPCG 3.1.
+  + [files](build/files): custom HPCG Makefiles used by RCC for tests. Vendors
     may use these as base to build their own.
-- [output](/output)
+- [output](output)
   + This directory contains sample output files for runs on 1, 2, 4, 8, and 16
     nodes. Performance results from these files should **not** be used for
     reference. These files are provided as examples of the output format.
-- [tests](/tests)
-  + [hpcg.dat](/tests/hpcg.dat): input file used for benchmarking. Runtime
+- [tests](tests)
+  + [hpcg.dat](tests/hpcg.dat): input file used for benchmarking. Runtime
     should be at least 3600 seconds, but vendors are encouraged to run each
     benchmark for longer for more accurate results.
-  + [job-template.sh](/tests/job-template.sh): Template file for a Slurm job.
+  + [job-template.sh](tests/job-template.sh): Template file for a Slurm job.
     This file is based on RCC's environment and provided as a guide. Vendors
     may launch benchmarks runs using their own methods if preferred.
-  + [run.sh](/tests/run.sh): This script generates the actual jobs based on the
+  + [run.sh](tests/run.sh): This script generates the actual jobs based on the
     job template above. Provided as an example.
 
 ## Building HPCG
 
-The script [build.sh](/build/build.sh) may be adjusted to the vendor's
+The script [build.sh](build/build.sh) may be adjusted to the vendor's
 environment and used to build HPCG. Vendors are free to choose one or more
 build stacks (compiler, libraries) based on the performance for their proposed
 hardware.
@@ -47,7 +47,7 @@ hardware.
 - Vendors are encouraged to run each HPCG benchmark for longer periods than
   3600 seconds.
 - Local dimensions of the problem should be `104 104 104` as in file
-  [hpcg.dat](/tests/hpcg.dat).
+  [hpcg.dat](tests/hpcg.dat).
 - Benchmarks should use MPI and be run for at least these cases: 1, 2, 4, 8,
   and 16 nodes, using all cores in each nodes.
 - At lest 5 independent runs should be performed for each case above.
