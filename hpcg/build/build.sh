@@ -18,7 +18,6 @@ mkdir -p bin
 # untar
 rm -rf ${name}
 tar xzf code/${name}.tar.gz
-pushd ${name}
 
 ######################################################################
 # GCC and OpenMPI                                                    #
@@ -27,6 +26,7 @@ pushd ${name}
     variant="openmpi"
     makefile="MPI_GCC_OMP"
 
+    pushd ${name}
     cp -v ../files/Make.${makefile} setup
     rm -rf build-${variant}
     mkdir -p build-${variant} && pushd $_
@@ -34,9 +34,9 @@ pushd ${name}
     ### DEPENDENCIES
     #  Make sure to change or remove 'module load' below as needed
     # For Midway3
-    #module load openmpi/4.1.0
+    module load openmpi/4.1.0
     # For Midway2
-    module load openmpi/3.0.0+gcc-6.2 gcc/6.2
+    #module load openmpi/3.0.0+gcc-6.2 gcc/6.2
     ### END OF DEPENDENCIES
 
     ../configure ${makefile}
@@ -52,6 +52,7 @@ pushd ${name}
     variant="intelmpi"
     makefile="MPIICPC_OMP"
 
+    pushd ${name}
     cp -v ../files/Make.${makefile} setup
     rm -rf build-${variant}
     mkdir -p build-${variant} && pushd $_
@@ -59,10 +60,10 @@ pushd ${name}
     ### DEPENDENCIES
     #  Make sure to change or remove 'module load' below as needed
     # For Midway3
-    #module load intelmpi/2021.5+intel-2022.0
-    #module load mkl/2023.1
+    module load intelmpi/2021.5+intel-2022.0
+    module load mkl/2023.1
     # For Midway2
-    module load intelmpi/2019.up7+intel-19.1.1 mkl/2019.up4
+    #module load intelmpi/2019.up7+intel-19.1.1 mkl/2019.up4
     ### END OF DEPENDENCIES
 
     ../configure ${makefile}
