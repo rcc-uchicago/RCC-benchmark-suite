@@ -52,8 +52,8 @@ SHELL        = /bin/sh
 #
 CD           = cd
 CP           = cp
-LN_S         = ln -s
-MKDIR        = mkdir
+LN_S         = ln -s -f
+MKDIR        = mkdir -p
 RM           = /bin/rm -f
 TOUCH        = touch
 #
@@ -61,13 +61,13 @@ TOUCH        = touch
 # - Platform identifier ------------------------------------------------
 # ----------------------------------------------------------------------
 #
-ARCH         = rcc
+ARCH         = $(arch)
 #
 # ----------------------------------------------------------------------
 # - HPL Directory Structure / HPL library ------------------------------
 # ----------------------------------------------------------------------
 #
-TOPdir       = /project2/rcc/yuxing/benchmark-2019/hpcc/build/hpcc/hpl
+TOPdir       = ../../..
 INCdir       = $(TOPdir)/include
 BINdir       = $(TOPdir)/bin/$(ARCH)
 LIBdir       = $(TOPdir)/lib/$(ARCH)
@@ -166,14 +166,14 @@ HPL_DEFS     = $(F2CDEFS) $(HPL_OPTS) $(HPL_INCLUDES)
 # - Compilers / linkers - Optimization flags ---------------------------
 # ----------------------------------------------------------------------
 #
-CC           = mpiicc -qopenmp
+CC           = mpiicc
 CCNOOPT      = $(HPL_DEFS)
-CCFLAGS      = $(HPL_DEFS) $(RCC_OMP_FLAG)
+CCFLAGS      = $(HPL_DEFS) -std=c99 -O3 -fno-alias -qopenmp -xHost
 #
 # On some platforms,  it is necessary  to use the Fortran linker to find
 # the Fortran internals used in the BLAS library.
 #
-LINKER       = mpiicc -qopenmp
+LINKER       = mpiicc
 LINKFLAGS    = $(CCFLAGS)
 #
 ARCHIVER     = ar
