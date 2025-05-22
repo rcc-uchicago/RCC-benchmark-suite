@@ -6,25 +6,41 @@ LAMMPS runs on single processors or in parallel using message-passing techniques
 
 LAMMPS is a hybrid MPI/OpenMP C/C++ code with GPU support with the Kokkos package (CUDA, HIP, SYCL) and GPU package (CUDA, OpenCL, HIP).
 
-Category: Materials, Chemistry, Molecular Dynamics Simulation 
-Version: stable_29Aug2024 or later
-Source: https://github.com/lammps/lammps
+**Category**: Materials, Chemistry, Molecular Dynamics Simulation 
+**Version**: stable_29Aug2024 or later
+**Source**: https://github.com/lammps/lammps
 
+## Directory Structure
 
-The structure of this folder is as follows:
+```
+.
+├── build/  # Scripts for downloading and building LAMMPS
+├── output/ # Sample output files (not for benchmarking reference)
+└── tests/  # Input files and job submission templates
+```
 
-- `build`
-  + `install.sh`: script that shows the steps to download the source code and build the software to get the binary
-- `tests`
-  + input scripts and data files used for the test
-  + README that shows the specific tests to run and the expected output files
-- `output`
-  + examples of the performance data collected from the runs
+### `build/`
 
-### What to submit
+- [install.sh](build/install.sh): Builds the LAMMPS benchmark.  **Important**: Adapt
+  this script to match your environment and dependencies before use.
 
-- The log files from the runs
+### `output/`
+
+- Contains example output files for the benchmark runs.  These are
+  **not** reference results and are included for formatting guidance only.
+
+### `tests/`
+
+- Contains the input scripts and data files for the benchmark runs. Check out
+the [README.md](tests/README.md) for more details.
+
+### What to Submit
+
+- The log files from the runs from which the performance data points for the plots are obtained.
 - Strong scaling plots
-  - Performance (timesteps/s) as a function of number of MPI tasks for a fixed number of atoms
+  - Performance (timesteps/s) as a function of number of MPI tasks for a fixed number of atoms for 1) CPU-only runs, 2) GPU runs with KOKKOS and 3) GPU runs with GPU packages
 - Weak scaling plots
-  - Performance (timesteps/s) as a function of number of MPI tasks for a fixed number of atoms per node
+  - Performance (timesteps/s) as a function of number of MPI tasks for a fixed number of atoms per node for CPU-only runs
+
+RCC staff should be able to reproduce the builds and runs from the details
+provided by the vendor.

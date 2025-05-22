@@ -1,0 +1,92 @@
+[ 000000.00 ] Reserving 4204544 bytes per rank for TEMP memory allocator. 
+[ 000000.58 ] ----------- Running with Parameters ----------
+FileWithInputSpectrum           ./class_pk_99.dat    # Line 026 # File containing input power spectrum, from CLASS or CAMB. 
+OutputDir                       output               # Line 000 # Output directory in which to store the ICs 
+FileBase                        IC                   # Line 001 # File name of the ICs. 
+Omega0                          0.2814               # Line 007 # Total matter density, cdm + baryons + massive neutrinos at z=0. 
+OmegaBaryon                     0.0464               # Line 009 # Omega Baryon: note this may be used for transfer functions even if gas is not produced. 
+OmegaLambda                     0.7186               # Line 008 # Dark energy density at z=0 
+HubbleParam                     0.697                # Line 011 # Hubble parameter 
+ProduceGas                      0                    # Line 010 # Should we create baryon particles? 
+BoxSize                         50000                # Line 005 # Size of box in internal units. 
+Redshift                        99                   # Line 013 # Starting redshift 
+Nmesh                           0                    # Default  # Size of the FFT grid used to estimate displacements. Should be > Ngrid. 
+Ngrid                           64                   # Line 003 # Size of regular grid on which the undisplaced CDM particles are created. 
+NgridGas                        -1                   # Default  # Size of regular grid on which the undisplaced gas particles are created. 
+NgridNu                         0                    # Default  # Number of neutrino particles created for hybrid neutrinos. 
+Seed                            181170               # Line 030 # Random number generator seed used for the phases of the Gaussian random field. 
+MakeGlassGas                    -1                   # Default  # Generate Glass IC for gas instead of Grid IC. 
+MakeGlassCDM                    0                    # Default  # Generate Glass IC for CDM instead of Grid IC. 
+UnitaryAmplitude                1                    # Default  # If 0, each Fourier mode in the initial power spectrum is scattered. If 1 each Fourier mode is not scattered and we generate unitary gaussians for the initial phases. 
+WhichSpectrum                   2                    # Line 017 # Type of spectrum, 2 for file  
+Omega_fld                       0                    # Default  # Energy density of dark energy fluid. 
+w0_fld                          -1                   # Default  # Dark energy equation of state 
+wa_fld                          0                    # Default  # Dark energy evolution parameter 
+Omega_ur                        0                    # Default  # Extra radiation density, eg, a sterile neutrino 
+CLASS_Radiation                 0                    # Default  # Boolean. If enabled, we enforce that sum(Omega_i) = 1. If disabled then Omega_m + Omega_L + Omega_fld + Omega_k = 1 and so sum(Omega_i) ~ 1+Omega_g 
+MNue                            0                    # Default  # First neutrino mass in eV. 
+MNum                            0                    # Default  # Second neutrino mass in eV. 
+MNut                            0                    # Default  # Third neutrino mass in eV. 
+MWDM_therm                      0                    # Default  # Assign a thermal velocity to the DM. Specifies WDM particle mass in keV. 
+Max_nuvel                       5000                 # Default  # Maximum neutrino velocity sampled from the F-D distribution. 
+DifferentTransferFunctions      0                    # Line 022 # Use species specific transfer functions for baryon and CDM. 
+ScaleDepVelocity                0                    # Line 023 # Use scale dependent velocity transfer functions instead of the scale-independent Zel'dovich approximation. Enabled by default iff DifferentTransferFunctions = 1 
+FileWithTransferFunction                             # Default  # File containing CLASS formatted transfer functions with extra metric transfer functions=y. 
+MaxMemSizePerNode               0.6                  # Default  # Maximum memory per node, in fraction of total memory, or MB if > 1. 
+CMBTemperature                  2.7255               # Default  # CMB temperature in K 
+RadiationOn                     1                    # Default  # Include radiation in the background. 
+UsePeculiarVelocity             1                    # Default  # Snapshots will save peculiar velocities to the Velocity field. If 0, then v/sqrt(a) will be used in the ICs to match Gadget-2, but snapshots will save v * a. 
+SavePrePos                      1                    # Default  # Save the pre-displacement positions in the snapshot. 
+InvertPhase                     0                    # Default  # Flip phase for paired simulation 
+PrePosGridCenter                0                    # Default  # Set pre-displacement positions at the center of the grid 
+ShowBacktrace                   1                    # Default  # Print a backtrace on crash. Hangs on stampede. 
+PrimordialAmp                   2.215e-09            # Default  # Ignored, but used by external CLASS script to set powr spectrum amplitude. 
+Sigma8                          0.81                 # Line 015 # Renormalise Sigma8 to this number if positive 
+InputPowerRedshift              -1                   # Default  # Redshift at which the input power is. Power spectrum will be rescaled to the initial redshift. Negative disables rescaling. 
+PrimordialIndex                 0.971                # Line 028 # Tilting power, ignored for tabulated input. 
+PrimordialRunning               0                    # Default  # Running of the spectral index, ignored for tabulated input, only used to pass parameter to tools/make_class_power.py 
+UnitVelocity_in_cm_per_s        100000               # Line 034 # Velocity unit in cm/sec. Default is 1 km/s 
+UnitLength_in_cm                3.08568e+21          # Line 032 # Length unit in cm. Default is 1 kpc 
+UnitMass_in_g                   1.989e+43            # Line 033 # Mass unit in g. Default is 10^10 M_sun. 
+NumPartPerFile                  134217728            # Default  # Number of particles per striped bigfile. Internal implementation detail. 
+NumWriters                      0                    # Default  # Number of processors allowed to write at one time. 
+[ 000000.58 ] ----------------------------------------------
+[ 000000.60 ] Nhost = 1
+[ 000000.60 ] Reserving 5062157721 bytes per rank for MAIN memory allocator. 
+[ 000002.42 ] Detected 2 columns in file './class_pk_99.dat'. 
+[ 000002.43 ] Growth factor from z=0 (InputPowerRedshift) to z=99 (Init): 0.0132908 
+[ 000002.43 ] Normalization adjusted to  Sigma8=0.81 (at z=0)  (Normfac=0.981096). 
+[ 000002.45 ] Using 2D Task mesh 4 x 6 
+[ 000002.46 ] Producing Peculiar Velocity in the output.
+[ 000002.49 ] PetaPM:  0000004096/0000017955 Pencils and 0000520192 Cells
+[ 000002.61 ] Task 0: Peak Memory usage induced by petapm.c:348
+[ 000002.61 ] Task 0: --------------- Allocator: MAIN              (self managed)-----------------
+[ 000002.61 ] Task 0:  Total: 0004943516 kbytes
+[ 000002.61 ] Task 0:  Free: 0004939776 Used: 0000003740 Top: 0000000736 Bottom: 0000003004 
+[ 000002.61 ] Task 0:  Name                 | d | Requested    Allocated    | Annotation
+[ 000002.61 ] Task 0: -------------------------------------------------------
+[ 000002.61 ] Task 0:  Powertable           | B | 000000000005 000000000012 | power.c:287
+[ 000002.61 ] Task 0:  PartTable            | B | 000000000800 000000000804 | main.c:134
+[ 000002.61 ] Task 0:  PMmesh               | B | 000000000698 000000000704 | petapm.c:943
+[ 000002.61 ] Task 0:  PMlayout             | B | 000000000000 000000000008 | petapm.c:599
+[ 000002.61 ] Task 0:  PencilSend           | B | 000000000018 000000000024 | petapm.c:622
+[ 000002.61 ] Task 0:  PencilRecv           | B | 000000000004 000000000012 | petapm.c:683
+[ 000002.61 ] Task 0:  PMrho_k              | B | 000000000715 000000000720 | petapm.c:54
+[ 000002.61 ] Task 0:  PMcomplex            | B | 000000000715 000000000720 | petapm.c:338
+[ 000002.61 ] Task 0:  PMreal               | T | 000000000715 000000000720 | petapm.c:343
+[ 000002.61 ] Task 0:  Regions              | T | 000000000000 000000000008 | zeldovich.c:114
+[ 000002.61 ] Task 0:  Mesh2Task            | T | 000000000001 000000000008 | petapm.c:121
+[ 000002.64 ] Type = 3 max disp = 163.788 in units of cell sep 0.419296 
+[ 000002.65 ] Max vel=103.138 km/s, vel_prefac= 0.527761  hubble_a=53.8518 fom=0.980024 
+                                   0.26 100.0%        0.26 100.0%        0.26       0.26
+  Finalize@zeldovich.c:0261         0.00  0.1%        0.00  0.1%        0.00       0.00
+ PMgrav                            0.24 92.2%        0.24 92.2%        0.24       0.24
+  c2r@petapm.c:0346                 0.01  5.6%        0.01  5.6%        0.01       0.02
+  calc@petapm.c:0341                0.14 54.0%        0.14 54.0%        0.14       0.14
+  comm@petapm.c:0352                0.00  0.5%        0.00  0.5%        0.00       0.00
+  init@petapm.c:0280                0.08 31.1%        0.08 31.1%        0.08       0.08
+  readout@petapm.c:0355             0.00  1.0%        0.00  1.0%        0.00       0.00
+ Write@save.c:0086                 0.02  7.8%        0.02  7.8%        0.02       0.02
+[ 000002.67 ] IC's generated.
+[ 000002.67 ] Initial scale factor = 0.01
+[ 000002.67 ] Task 0: kstart=0.0628319 kend=27.86 (h/Mpc)

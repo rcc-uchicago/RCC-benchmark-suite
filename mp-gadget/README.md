@@ -4,16 +4,39 @@ This version of Gadget is derived from main P-Gadget / Gadget-2, with the gravit
 
 MP-Gadget is a hybrid MPI/OpenMP C code.
 
-Category: Cosmology, Physics
-Version: master branch
-Source: https://github.com/MP-Gadget/MP-Gadget
+**Category**: Cosmology, Physics
+**Version**: master branch
+**Source**: https://github.com/MP-Gadget/MP-Gadget
 
-The structure of this folder is as follows:
+## Directory Structure
 
-- `build`
-  + `install.sh`: script that shows the steps to download the source code and build the software to get the binary
-- `tests`
-  + input scripts and data files used for the test
-  + README that shows the specific tests to run and the expected output files
-- `output`
-  + example of the performance data collected from the runs
+```
+.
+├── build/  # Scripts for downloading and building MP-GADGET
+├── output/ # Sample output files (not for benchmarking reference)
+└── tests/  # Input files and example job script
+```
+
+### `build/`
+
+- [install.sh](build/install.sh): Builds the MP-GADGET benchmark.  **Important**: Adapt
+  this script to match your environment and dependencies before use.
+
+### `output/`
+
+- Contains example output files for the benchmark runs.  These are
+  **not** reference results and are included for formatting guidance only.
+
+### `tests/`
+
+- Contains the input scripts and data files for the benchmark runs. Check out
+the [README.md](tests/README.md) for more details.
+
+### What to Submit
+
+- The log files from the runs from which the performance data points for the plots are obtained.
+- Strong scaling plots
+  - Performance (timesteps/s) as a function of number of MPI tasks for a fixed number of atoms for 1) CPU-only runs, 2) GPU runs with KOKKOS and 3) GPU runs with GPU packages
+
+RCC staff should be able to reproduce the builds and runs from the details
+provided by the vendor.
