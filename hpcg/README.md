@@ -41,7 +41,7 @@ this repository.
   **at least 3600 seconds**, though longer runs may yield more reliable
   performance data.
 - [job-template.sh](tests/job-template.sh): A Slurm job submission template
-  based on RCC’s environment. Vendors may adapt or replace it based on their
+  based on RCC's environment. Vendors may adapt or replace it based on their
   own job scheduling systems.
 - [run.sh](tests/run.sh): Script to generate and submit HPCG runs based on the
   job template.
@@ -87,6 +87,4 @@ Submit the following artifacts as part of your RFP response:
   - GFLOP/s values averaged from **at least 5 runs per configuration**
   - Populate the provided Excel sheet (found at the root of this repo) using
     values from the `Final Summary` section
-
-RCC staff should be able to reproduce the builds and runs from the details
-provided by the vendor.
+RCC staff must be able to reproduce the build and run using the provided information.
