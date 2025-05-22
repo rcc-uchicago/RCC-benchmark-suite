@@ -12,7 +12,7 @@ for compiler in intelmpi; do
         cp -v ../../job-template.sh ${jobfile}
         sed -i "s/XXX/${nodes}/g" ${jobfile}
         sed -i "s/YYY/${compiler}/g" ${jobfile}
-        #sbatch ${jobfile}
+        sbatch ${jobfile}
         cd ..
         sleep 1
     done
