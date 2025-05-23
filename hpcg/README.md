@@ -66,7 +66,6 @@ Please follow these standardized conditions:
 - MPI must be used. Benchmarks should be performed for:
   - 1, 2, 4, 8, and 16 nodes
   - All physical cores must be used (hyperthreading must be disabled)
-- Each case must be run **at least 5 times** independently
 
 ## What to Submit
 
@@ -84,7 +83,7 @@ Submit the following artifacts as part of your RFP response:
   - Commands used for launching jobs
   - Any system tuning or configuration details
 - Performance summary:
-  - GFLOP/s values averaged from **at least 5 runs per configuration**
+  - GFLOP/s values
   - Populate the provided Excel sheet (found at the root of this repo) using
     values from the `Final Summary` section
 RCC staff must be able to reproduce the build and run using the provided information.
