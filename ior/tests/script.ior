@@ -1,0 +1,122 @@
+IOR START
+    reorderTasks=1
+    fsync=1
+    keepFile=0
+    memoryPerNode=60g
+    intraTestBarriers=1
+    verbose=2
+    repetitions=3
+    segmentCount=5
+    blockSize=128m
+
+### Scenario 1: Shared file, large transfers, sequential write/read
+    testFile = ior_test01
+    api=POSIX
+    writeFile=1
+    readFile=1
+    filePerProc=0
+    transferSize=32m
+    RUN
+
+### Scenario 2: File-per-process, large transfers, sequential write/read
+    testFile = ior_test02
+    api=POSIX
+    writeFile=1
+    readFile=1
+    filePerProc=1
+    transferSize=32m
+    RUN
+
+### Scenario 3: Shared file, medium transfers, sequential write/read
+    testFile = ior_test03
+    api=POSIX
+    writeFile=1
+    readFile=1
+    filePerProc=0
+    transferSize=4m
+    RUN
+
+### Scenario 4: File-per-process, medium transfers, sequential write/read
+    testFile = ior_test04
+    api=POSIX
+    writeFile=1
+    readFile=1
+    filePerProc=1
+    transferSize=4m
+    RUN
+
+### Scenario 5: Shared file, small transfers, sequential write/read
+    testFile = ior_test05
+    api=POSIX
+    writeFile=1
+    readFile=1
+    filePerProc=0
+    transferSize=64k
+    RUN
+
+### Scenario 6: File-per-process, small transfers, sequential write/read
+    testFile = ior_test06
+    api=POSIX
+    writeFile=1
+    readFile=1
+    filePerProc=1
+    transferSize=64k
+    RUN
+
+### Scenario 7: File-per-process, random access
+    testFile = ior_test07
+    api=POSIX
+    writeFile=1
+    readFile=1
+    reorderTasks=0
+    randomOffset=1
+    filePerProc=1
+    transferSize=64k
+    RUN
+
+    # reset previous changes
+    randomOffset=0
+    reorderTasks=1
+
+### Scenario 8: Shared file, HDF5 backend, collective I/O
+    testFile = ior_test08
+    api=HDF5
+    writeFile=1
+    readFile=1
+    collective=1
+    filePerProc=0
+    transferSize=256k
+    RUN
+
+### Scenario 9: File-per-process, HDF5 backend, collective I/O
+    testFile = ior_test09
+    api=HDF5
+    writeFile=1
+    readFile=1
+    collective=1
+    filePerProc=1
+    transferSize=256k
+    RUN
+
+### Scenario 10: Shared file, MPIIO, collective I/O strided access
+    testFile = ior_test10
+    api=MPIIO
+    writeFile=1
+    readFile=1
+    collective=1
+    filePerProc=0
+    transferSize=256k
+    RUN
+
+### Scenario 11: File-per-process file, MPIIO, collective I/O strided access
+    testFile = ior_test10
+    api=MPIIO
+    writeFile=1
+    readFile=1
+    collective=1
+    filePerProc=1
+    transferSize=256k
+    RUN
+
+
+IOR STOP
