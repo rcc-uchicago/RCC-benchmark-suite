@@ -54,8 +54,11 @@ To build HPCG:
    your environment.
 2. Execute the script to build the benchmark with your desired compiler and MPI
    stack.
+3. The build script will copy the final executables to the newly created
+   directory `build/bin`.
 
-Multiple builds with different toolchains are allowed and encouraged if relevant to system performance.
+Multiple builds with different toolchains are allowed and encouraged if
+relevant to system performance.
 
 ## Benchmarking Requirements
 
@@ -86,4 +89,5 @@ Submit the following artifacts as part of your RFP response:
   - GFLOP/s values
   - Populate the provided Excel sheet (found at the root of this repo) using
     values from the `Final Summary` section
+
 RCC staff must be able to reproduce the build and run using the provided information.

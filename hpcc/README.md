@@ -52,6 +52,8 @@ To build HPCC:
    your environment.
 2. Execute the script to build the benchmark with your desired compiler and MPI
    stack.
+3. The build script will copy the final executables to the newly created
+   directory `build/bin`.
 
 Multiple builds with different toolchains are allowed and encouraged if
 relevant to system performance.
