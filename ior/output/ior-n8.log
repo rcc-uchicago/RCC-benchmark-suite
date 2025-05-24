@@ -1,0 +1,468 @@
+IOR-4.0.0: MPI Coordinated Test of Parallel I/O
+Began               : Thu May 22 21:40:03 2025
+Command line        : ./ior -f script.ior
+Machine             : Linux midway2-0221.rcc.local 3.10.0-1160.76.1.el7.x86_64 #1 SMP Wed Aug 10 16:21:17 UTC 2022 x86_64
+TestID              : 0
+StartTime           : Thu May 22 21:40:03 2025
+Path                : ior_test01
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test01
+access              : single-shared-file
+type                : independent
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 32 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968003 (0x682fe003) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:40:04 2025
+write     2613.79    81.73      13.70       131072     32768      0.032793   54.81      0.002542   54.85      0   
+Commencing read performance test: Thu May 22 21:40:58 2025
+
+read      9125       285.23     1.88        131072     32768      0.001555   15.71      0.002037   15.71      0   
+remove    -          -          -           -          -          -          -          -          0.110416   0   
+Max Write: 2613.79 MiB/sec (2740.75 MB/sec)
+Max Read:  9125.29 MiB/sec (9568.55 MB/sec)
+TestID              : 1
+StartTime           : Thu May 22 21:41:15 2025
+Path                : ior_test02.00000000
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test02
+access              : file-per-process
+type                : independent
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 32 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968076 (0x682fe04c) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:41:18 2025
+write     2731.15    87.45      12.03       131072     32768      1.26       51.23      0.000819   52.49      0   
+Commencing read performance test: Thu May 22 21:42:09 2025
+
+read      26820      864.77     1.28        131072     32768      0.164101   5.18       0.000915   5.35       0   
+remove    -          -          -           -          -          -          -          -          0.384601   0   
+Max Write: 2731.15 MiB/sec (2863.81 MB/sec)
+Max Read:  26819.58 MiB/sec (28122.37 MB/sec)
+TestID              : 2
+StartTime           : Thu May 22 21:42:15 2025
+Path                : ior_test03
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test03
+access              : single-shared-file
+type                : independent
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 4 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968136 (0x682fe088) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:42:16 2025
+write     2723.33    681.93     1.64        131072     4096       0.082343   52.56      0.002830   52.64      0   
+Commencing read performance test: Thu May 22 21:43:08 2025
+
+read      22868      5721       0.182545    131072     4096       0.001713   6.26       0.003536   6.27       0   
+remove    -          -          -           -          -          -          -          -          0.130140   0   
+Max Write: 2723.33 MiB/sec (2855.61 MB/sec)
+Max Read:  22867.61 MiB/sec (23978.43 MB/sec)
+TestID              : 3
+StartTime           : Thu May 22 21:43:15 2025
+Path                : ior_test04.00000000
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test04
+access              : file-per-process
+type                : independent
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 4 MiB
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968196 (0x682fe0c4) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:43:20 2025
+write     2659.40    722.03     1.37        131072     4096       4.27       49.64      0.001012   53.91      0   
+Commencing read performance test: Thu May 22 21:44:10 2025
+
+read      39001      10148      0.103008    131072     4096       0.143755   3.53       0.000552   3.68       0   
+remove    -          -          -           -          -          -          -          -          0.700718   0   
+Max Write: 2659.40 MiB/sec (2788.59 MB/sec)
+Max Read:  39001.05 MiB/sec (40895.57 MB/sec)
+TestID              : 4
+StartTime           : Thu May 22 21:44:15 2025
+Path                : ior_test05
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test05
+access              : single-shared-file
+type                : independent
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 65536 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968256 (0x682fe100) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:44:16 2025
+write     3153.69    50706      0.022080    131072     64.00      0.219191   45.24      0.002880   45.46      0   
+Commencing read performance test: Thu May 22 21:45:01 2025
+
+read      27842      447149     0.002364    131072     64.00      0.001302   5.13       0.018278   5.15       0   
+remove    -          -          -           -          -          -          -          -          0.106334   0   
+Max Write: 3153.69 MiB/sec (3306.88 MB/sec)
+Max Read:  27841.94 MiB/sec (29194.39 MB/sec)
+TestID              : 5
+StartTime           : Thu May 22 21:45:07 2025
+Path                : ior_test06.00000000
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test06
+access              : file-per-process
+type                : independent
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 65536 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968308 (0x682fe134) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:45:10 2025
+write     2472.49    41417      0.026690    131072     64.00      2.59       55.38      0.011908   57.98      0   
+Commencing read performance test: Thu May 22 21:46:06 2025
+
+read      30630      504600     0.001970    131072     64.00      0.133729   4.55       0.001151   4.68       0   
+remove    -          -          -           -          -          -          -          -          0.176497   0   
+Max Write: 2472.49 MiB/sec (2592.59 MB/sec)
+Max Read:  30630.16 MiB/sec (32118.05 MB/sec)
+TestID              : 6
+StartTime           : Thu May 22 21:46:11 2025
+Path                : ior_test07.00000000
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : ior_test07
+access              : file-per-process
+type                : independent
+segments            : 5
+ordering in a file  : random
+ordering inter file : no tasks offsets
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 65536 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968372 (0x682fe174) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:46:13 2025
+write     1209.89    19565      0.054377    131072     64.00      1.25       117.24     0.001426   118.49     0   
+Commencing read performance test: Thu May 22 21:48:10 2025
+
+read      955.37     15286      0.066690    131072     64.00      0.000636   150.06     0.001803   150.06     0   
+remove    -          -          -           -          -          -          -          -          0.008478   0   
+Max Write: 1209.89 MiB/sec (1268.66 MB/sec)
+Max Read:  955.37 MiB/sec (1001.77 MB/sec)
+TestID              : 7
+StartTime           : Thu May 22 21:50:41 2025
+Path                : ior_test08
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : HDF5
+apiVersion          : 
+test filename       : ior_test08
+access              : single-shared-file
+type                : collective
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 262144 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747968642 (0x682fe282) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 21:50:42 2025
+write     651.51     2610.86    0.428929    131072     256.00     0.397555   219.64     0.007861   220.04     0   
+Commencing read performance test: Thu May 22 21:54:22 2025
+
+read      210.07     840.28     1.33        131072     256.00     0.003679   682.44     0.001043   682.44     0   
+remove    -          -          -           -          -          -          -          -          0.014150   0   
+Max Write: 651.51 MiB/sec (683.16 MB/sec)
+Max Read:  210.07 MiB/sec (220.27 MB/sec)
+TestID              : 8
+StartTime           : Thu May 22 22:05:45 2025
+Path                : ior_test09.00000000
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : HDF5
+apiVersion          : 
+test filename       : ior_test09
+access              : file-per-process
+type                : collective
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 262144 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747969545 (0x682fe609) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 22:05:45 2025
+write     4454       17833      0.041761    131072     256.00     0.030918   32.16      0.002263   32.19      0   
+Commencing read performance test: Thu May 22 22:06:18 2025
+
+read      5472       21997      0.048925    131072     256.00     0.128406   26.07      0.001991   26.20      0   
+remove    -          -          -           -          -          -          -          -          0.640956   0   
+Max Write: 4453.82 MiB/sec (4670.16 MB/sec)
+Max Read:  5471.90 MiB/sec (5737.71 MB/sec)
+TestID              : 9
+StartTime           : Thu May 22 22:06:45 2025
+Path                : ior_test10
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : MPIIO
+apiVersion          : 
+test filename       : ior_test10
+access              : single-shared-file
+type                : collective
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 262144 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747969606 (0x682fe646) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 22:06:47 2025
+write     4242       17546      0.063813    131072     256.00     1.11       32.68      0.002818   33.79      0   
+Commencing read performance test: Thu May 22 22:07:20 2025
+
+read      265.03     1060.13    1.06        131072     256.00     0.001947   540.92     0.000966   540.92     0   
+remove    -          -          -           -          -          -          -          -          0.036717   0   
+Max Write: 4242.48 MiB/sec (4448.57 MB/sec)
+Max Read:  265.03 MiB/sec (277.90 MB/sec)
+TestID              : 10
+StartTime           : Thu May 22 22:16:21 2025
+Path                : ior_test10.00000000
+FS                  : 3840.9 TiB   Used FS: 81.1%   Inodes: 1023.2 Mi   Used Inodes: 62.8%
+Participating tasks : 224
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : MPIIO
+apiVersion          : 
+test filename       : ior_test10
+access              : file-per-process
+type                : collective
+segments            : 5
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 8
+tasks               : 224
+clients per node    : 28
+memoryPerNode       : 37.34 GiB
+repetitions         : 1
+xfersize            : 262144 bytes
+blocksize           : 128 MiB
+aggregate filesize  : 140 GiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1747970182 (0x682fe886) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+Commencing write performance test: Thu May 22 22:16:23 2025
+write     4274       17651      0.061529    131072     256.00     1.06       32.49      0.001184   33.54      0   
+Commencing read performance test: Thu May 22 22:16:55 2025
+
+read      6027       24201      0.025339    131072     256.00     0.081459   23.69      0.009565   23.79      0   
+remove    -          -          -           -          -          -          -          -          0.384087   0   
+Max Write: 4273.72 MiB/sec (4481.32 MB/sec)
+Max Read:  6027.32 MiB/sec (6320.10 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write        2613.79    2613.79    2613.79       0.00      81.68      81.68      81.68       0.00   54.84763         NA            NA     0    224  28    1   0     1        1         0    0      5 134217728 33554432  143360.0 POSIX      0
+read         9125.29    9125.29    9125.29       0.00     285.17     285.17     285.17       0.00   15.71019         NA            NA     0    224  28    1   0     1        1         0    0      5 134217728 33554432  143360.0 POSIX      0
+write        2731.15    2731.15    2731.15       0.00      85.35      85.35      85.35       0.00   52.49078         NA            NA     1    224  28    1   1     1        1         0    0      5 134217728 33554432  143360.0 POSIX      0
+read        26819.58   26819.58   26819.58       0.00     838.11     838.11     838.11       0.00    5.34535         NA            NA     1    224  28    1   1     1        1         0    0      5 134217728 33554432  143360.0 POSIX      0
+write        2723.33    2723.33    2723.33       0.00     680.83     680.83     680.83       0.00   52.64151         NA            NA     2    224  28    1   0     1        1         0    0      5 134217728  4194304  143360.0 POSIX      0
+read        22867.61   22867.61   22867.61       0.00    5716.90    5716.90    5716.90       0.00    6.26913         NA            NA     2    224  28    1   0     1        1         0    0      5 134217728  4194304  143360.0 POSIX      0
+write        2659.40    2659.40    2659.40       0.00     664.85     664.85     664.85       0.00   53.90680         NA            NA     3    224  28    1   1     1        1         0    0      5 134217728  4194304  143360.0 POSIX      0
+read        39001.05   39001.05   39001.05       0.00    9750.26    9750.26    9750.26       0.00    3.67580         NA            NA     3    224  28    1   1     1        1         0    0      5 134217728  4194304  143360.0 POSIX      0
+write        3153.69    3153.69    3153.69       0.00   50458.98   50458.98   50458.98       0.00   45.45792         NA            NA     4    224  28    1   0     1        1         0    0      5 134217728    65536  143360.0 POSIX      0
+read        27841.94   27841.94   27841.94       0.00  445471.08  445471.08  445471.08       0.00    5.14907         NA            NA     4    224  28    1   0     1        1         0    0      5 134217728    65536  143360.0 POSIX      0
+write        2472.49    2472.49    2472.49       0.00   39559.82   39559.82   39559.82       0.00   57.98207         NA            NA     5    224  28    1   1     1        1         0    0      5 134217728    65536  143360.0 POSIX      0
+read        30630.16   30630.16   30630.16       0.00  490082.58  490082.58  490082.58       0.00    4.68035         NA            NA     5    224  28    1   1     1        1         0    0      5 134217728    65536  143360.0 POSIX      0
+write        1209.89    1209.89    1209.89       0.00   19358.27   19358.27   19358.27       0.00  118.48995         NA            NA     6    224  28    1   1     0        1         0    0      5 134217728    65536  143360.0 POSIX      0
+read          955.37     955.37     955.37       0.00   15285.84   15285.84   15285.84       0.00  150.05779         NA            NA     6    224  28    1   1     0        1         0    0      5 134217728    65536  143360.0 POSIX      0
+write         651.51     651.51     651.51       0.00    2606.05    2606.05    2606.05       0.00  220.04196         NA            NA     7    224  28    1   0     1        1         0    0      5 134217728   262144  143360.0 HDF5      0
+read          210.07     210.07     210.07       0.00     840.28     840.28     840.28       0.00  682.44125         NA            NA     7    224  28    1   0     1        1         0    0      5 134217728   262144  143360.0 HDF5      0
+write        4453.82    4453.82    4453.82       0.00   17815.26   17815.26   17815.26       0.00   32.18813         NA            NA     8    224  28    1   1     1        1         0    0      5 134217728   262144  143360.0 HDF5      0
+read         5471.90    5471.90    5471.90       0.00   21887.61   21887.61   21887.61       0.00   26.19930         NA            NA     8    224  28    1   1     1        1         0    0      5 134217728   262144  143360.0 HDF5      0
+write        4242.48    4242.48    4242.48       0.00   16969.93   16969.93   16969.93       0.00   33.79153         NA            NA     9    224  28    1   0     1        1         0    0      5 134217728   262144  143360.0 MPIIO      0
+read          265.03     265.03     265.03       0.00    1060.12    1060.12    1060.12       0.00  540.91855         NA            NA     9    224  28    1   0     1        1         0    0      5 134217728   262144  143360.0 MPIIO      0
+write        4273.72    4273.72    4273.72       0.00   17094.90   17094.90   17094.90       0.00   33.54452         NA            NA    10    224  28    1   1     1        1         0    0      5 134217728   262144  143360.0 MPIIO      0
+read         6027.32    6027.32    6027.32       0.00   24109.28   24109.28   24109.28       0.00   23.78503         NA            NA    10    224  28    1   1     1        1         0    0      5 134217728   262144  143360.0 MPIIO      0
+Finished            : Thu May 22 22:17:20 2025
