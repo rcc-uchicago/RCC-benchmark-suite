@@ -9,56 +9,36 @@ computational workloads that better represent a wider range of modern HPC
 applications. Vendors are expected to submit results based on the guidelines in
 this repository.
 
-## Directory Structure
+**Category**: HPC, Benchmark, Numerical Methods
+**Version**: 3.1
+**Source**: https://github.com/hpcg-benchmark/hpcg
 
-```
-.
-├── build/  # Scripts and source for building HPCG
-├── output/ # Sample output files (not for benchmarking reference)
-└── tests/  # Input files and job submission templates
-```
+## Directory Contents
 
-### `build/`
+- [build](build)
+  - [build.sh](build/build.sh): Builds the HPCG benchmark.  **Important**: Adapt
+    this script to match your environment and dependencies before use.
+  - [clean.sh](build/clean.sh): Removes all generated artifacts and resets the
+    build environment.
+  - [code/](build/code): Contains the HPCG 3.1 source code and associated SHA256
+    checksums.
+  - [files/](build/files): RCC-provided Makefiles. Vendors may use or modify
+    these for their own builds.
 
-- [build.sh](build/build.sh): Builds the HPCG benchmark.  **Important**: Adapt
-  this script to match your environment and dependencies before use.
-- [clean.sh](build/clean.sh): Removes all generated artifacts and resets the
-  build environment.
-- [code/](build/code): Contains the HPCG 3.1 source code and associated SHA256
-  checksums.
-- [files/](build/files): RCC-provided Makefiles. Vendors may use or modify
-  these for their own builds.
+- [output](output)
+  - Contains example output files for 1, 2, 4, 8, and 16 node runs.  These are
+    **not** reference results and are included for formatting guidance only.
 
-### `output/`
-
-- Contains example output files for 1, 2, 4, 8, and 16 node runs.  These are
-  **not** reference results and are included for formatting guidance only.
-
-### `tests/`
-
-- [hpcg.dat](tests/hpcg.dat): Input file for benchmark runs. Vendors should
-  retain the local problem dimensions of `104 104 104`. Recommended runtime is
-  **at least 3600 seconds**, though longer runs may yield more reliable
-  performance data.
-- [job-template.sh](tests/job-template.sh): A Slurm job submission template
-  based on RCC's environment. Vendors may adapt or replace it based on their
-  own job scheduling systems.
-- [run.sh](tests/run.sh): Script to generate and submit HPCG runs based on the
-  job template.
-
-## Building HPCG
-
-To build HPCG:
-
-1. Modify `build/build.sh` to load appropriate modules and dependencies for
-   your environment.
-2. Execute the script to build the benchmark with your desired compiler and MPI
-   stack.
-3. The build script will copy the final executables to the newly created
-   directory `build/bin`.
-
-Multiple builds with different toolchains are allowed and encouraged if
-relevant to system performance.
+- [tests](tests)
+  - [hpcg.dat](tests/hpcg.dat): Input file for benchmark runs. Vendors should
+    retain the local problem dimensions of `104 104 104`. Recommended runtime is
+    **at least 3600 seconds**, though longer runs may yield more reliable
+    performance data.
+  - [job-template.sh](tests/job-template.sh): A Slurm job submission template
+    based on RCC's environment. Vendors may adapt or replace it based on their
+    own job scheduling systems.
+  - [run.sh](tests/run.sh): Script to generate and submit HPCG runs based on the
+    job template.
 
 ## Benchmarking Requirements
 
@@ -72,7 +52,8 @@ Please follow these standardized conditions:
 
 ## What to Submit
 
-Submit the following artifacts as part of your RFP response:
+In addition to populating the provided Excel sheet with the relevant performance
+metrics, please submit the following as part of your RFP response:
 
 - HPCG output files: `HPCG-Benchmark_3.1_*.txt` for **all** runs
 - Hardware topology:
@@ -85,9 +66,3 @@ Submit the following artifacts as part of your RFP response:
 - Runtime environment:
   - Commands used for launching jobs
   - Any system tuning or configuration details
-- Performance summary:
-  - GFLOP/s values
-  - Populate the provided Excel sheet (found at the root of this repo) using
-    values from the `Final Summary` section
-
-RCC staff must be able to reproduce the build and run using the provided information.

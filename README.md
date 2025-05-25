@@ -1,25 +1,94 @@
-# RCC-benchmark-suite
+# RCC-Benchmark-Suite
 
-This repo keeps track of the benchmark suite for the vendors to provide.
+This repository collects and maintains the benchmark suite that RCC makes
+available to vendors. It includes specific versions of each benchmark software
+and input files to be used by vendors, as well as details on what information
+RCC expects for each benchmark.
 
-The list of applications (version 2025) is given as below.
+If you are a vendor, please read this README in its entirety as it contains
+important information.
 
-* [HPCC](https://github.com/icl-utk-edu/hpcc)
-  - The ​HPC Challenge ​benchmark suite is a public collection of parallel benchmarks intended to stress various aspects of a high performance computing system. These benchmarks include HPL, DGEMM, STREAM, PTRANS, RandomAccess, FFT, and Communication bandwidth and latency.
-  - The focus of this package is on fundamental components such as memory bandwidth and memory access patterns within a single node and innterconnects between nodes by performing and measuring the performance of isolated operations.
-* [HPCG](https://github.com/hpcg-benchmark/hpcg)
-  - High-Performance Conjugate Gradients (HPCG) solves a sparse linear system using the conjugate gradient method used in CFD and FEM applications
-  - MPI parallelization: computation and communication performances
-  - The focus is on the performance of the bottleneck of the applications, that is, strong scaling performance of the matrix operations (GFLOP/s) vs. # of nodes.
-* [IOR](https://github.com/hpc/ior)
-  - IOR measures parallel file system I/O performance at both the POSIX and MPI-IO level; performs writes and reads to/from files under several sets of conditions and reports the resulting throughput rates.
-  - MPI parallelization
-  - The focus is on the data transfer bandwidth (MiB/s) as a function of number of MPI tasks and the number of nodes.
-* [LAMMPS](https://github.com/lammps/lammps)
-  - LAMMPS performs classical Molecular Dynamics simulations with short-ranged interactions and long-range electrostatics
-  - MPI parallelization, also supporting both multithreading and GPU acceleration: computation and communication performances
-  - The focus is on the strong and weak scaling performances of the application (timesteps/s vs. # of nodes or # of MPI tasks)
-* [MP-GADGET](https://github.com/MP-Gadget/MP-Gadget)
-  - MP-GADGET performs N-body simulations with smooth particle hydrodynamics and long-range gravitational interactions
-  - MPI parallelization, also supporting mulithreading
-  - The focus is on the strong scaling performance of the whole application (steps/s vs. # of nodes or # of MPI tasks)
+## Benchmark Applications
+
+The five benchmark applications included in this suite are all open-source
+software, covering three benchmark categories:
+
+- **Standard Compute**
+  - [HPCG](hpcg): High Performance Conjugate Gradients
+  - [HPCC](hpcc): HPC Challenge
+
+- **Scientific Applications**
+  - [LAMMPS](lammps): Molecular Dynamics Simulator
+  - [MP-GADGET](mp-gadget): Massively Parallel Cosmological SPH Simulation
+    Software
+
+- **Storage**
+  - [IOR](ior): Parallel IO Benchmark Software
+
+These applications evaluate different aspects of HPC systems, such as compute
+capabilities, interconnect communication, memory bandwidth, and I/O performance.
+A brief description of each follows.
+
+- [HPCG](https://github.com/hpcg-benchmark/hpcg)
+  - Solves a sparse linear system using the conjugate gradient method, common to
+    domains such as CFD and FEM.  
+  - Focus: Strong scaling performance of matrix operations (GFLOP/s vs. number
+    of nodes).
+  - Parallelization: MPI  
+
+- [HPCC](https://github.com/icl-utk-edu/hpcc)
+  - The HPC Challenge is a collection of parallel benchmarks, including HPL,
+    DGEMM, STREAM, PTRANS, RandomAccess, FFT, and communication tests.  
+  - Focus: Memory bandwidth and access patterns within a node and inter-node
+    communication.
+  - Parallelization: MPI
+
+- [LAMMPS](https://github.com/lammps/lammps)
+  - LAMMPS performs classical Molecular Dynamics simulations with short-ranged
+    interactions and long-range electrostatics
+  - The focus is on the strong and weak scaling performances of the application
+    (timesteps/s vs. # of nodes or # of MPI tasks)
+  - Parallelization: MPI, also supporting both multithreading and GPU
+    acceleration
+
+- [MP-GADGET](https://github.com/MP-Gadget/MP-Gadget)
+  - MP-GADGET performs N-body simulations with smooth particle hydrodynamics
+    and long-range gravitational interactions
+  - The focus is on the strong scaling performance of the whole application
+    (steps/s vs. # of nodes or # of MPI tasks)
+  - Parallelization: MPI, also supporting mulithreading
+
+- [IOR](https://github.com/hpc/ior)
+  - Measures parallel file system I/O performance using various interfaces
+    (POSIX, MPIIO, HDF5). Supports sequential and random access patterns.  
+  - Focus: Data transfer bandwidth (MiB/s) as a function of the number of MPI
+    tasks and nodes for each I/O scenario.
+  - Parallelization: MPI
+
+## Application Directory Organization
+
+**Specific files and instructions for each benchmark** are located in the
+respective application directory at the root of this repository. Each
+application directory is organized as follows:
+
+```
+application/
+├── README.md  # Application specific instructions, PLEASE DO NOT SKIP
+├── build/     # Scripts and source (or link to source) for building the application
+├── output/    # Sample output files, not for benchmarking reference
+└── tests/     # Input files, scripts and data required for the benchmark runs
+```
+
+Each `build/` directory includes a script called `build.sh` that can be used to
+assist with building the application and which needs to be adapted by the
+vendors so that the correct environment dependent libraries needed to build the
+application are loaded.
+
+## What to Submit
+
+Each benchmark requires the submission of specific files and metrics. The
+provided Excel sheet must be populated using the required values for metrics
+obtained in each benchmark.
+
+**RCC staff must be able to reproduce the builds and runs using the provided
+information.**
