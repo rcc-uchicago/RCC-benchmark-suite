@@ -92,3 +92,14 @@ required values for metrics obtained in each benchmark.
 
 **RCC staff must be able to reproduce the builds and runs using the provided
 information.**
+
+## License
+
+All third-party code, application software, and benchmark software included,
+linked or mentioned in this repository are owned by their respective authors
+and governed by their respective licenses.
+
+The specific benchmark details, scripts, and input files provided in this
+repository are governed by the [LICENSE](LICENSE) file of this repository.
+Please refer to this file for terms of usage and distribution.
+
