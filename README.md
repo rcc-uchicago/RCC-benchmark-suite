@@ -87,8 +87,8 @@ application are loaded.
 ## What to Submit
 
 Each benchmark requires the submission of specific files and metrics. The
-provided Excel sheet must be populated using the required values for metrics
-obtained in each benchmark.
+[provided Excel sheet](RCC-Benchmark-Report.xlsx) must be populated using the
+required values for metrics obtained in each benchmark.
 
 **RCC staff must be able to reproduce the builds and runs using the provided
 information.**
