@@ -18,8 +18,10 @@ functionality.
 LAMMPS is a hybrid MPI/OpenMP C/C++ code with GPU support with the Kokkos
 package (CUDA, HIP, SYCL) and GPU package (CUDA, OpenCL, HIP).
 
-**Category**: Materials, Chemistry, Molecular Dynamics Simulation 
+**Category**: Materials, Chemistry, Molecular Dynamics Simulation
+
 **Version**: stable_29Aug2024 or later
+
 **Source**: https://github.com/lammps/lammps
 
 ## Directory Contents

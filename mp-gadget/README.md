@@ -11,7 +11,9 @@ requires GSL and a C compiler with OpenMP 4.5 support.
 MP-Gadget is a hybrid MPI/OpenMP C code.
 
 **Category**: Cosmology, Physics
+
 **Version**: master branch
+
 **Source**: https://github.com/MP-Gadget/MP-Gadget
 
 ## Directory Contents

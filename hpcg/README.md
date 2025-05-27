@@ -10,7 +10,9 @@ applications. Vendors are expected to submit results based on the guidelines in
 this repository.
 
 **Category**: HPC, Benchmark, Numerical Methods
+
 **Version**: 3.1
+
 **Source**: https://github.com/hpcg-benchmark/hpcg
 
 ## Directory Contents

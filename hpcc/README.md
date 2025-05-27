@@ -9,7 +9,9 @@ and consists of basically 7 tests: HPL, DGEMM, STREAM, PTRANS, RandomAccess,
 FFT, communication bandwidth and latency.
 
 **Category**: HPC, Benchmark, Numerical Methods
+
 **Version**: 1.5.0
+
 **Source**: https://github.com/icl-utk-edu/hpcc
 
 ## Directory Contents
