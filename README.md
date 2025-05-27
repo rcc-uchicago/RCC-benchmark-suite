@@ -27,7 +27,7 @@ software, covering three benchmark categories:
 
 These applications evaluate different aspects of HPC systems, such as compute
 capabilities, interconnect communication, memory bandwidth, and I/O performance.
-A brief description of each follows.
+A brief description of each application follows.
 
 - [HPCG](https://github.com/hpcg-benchmark/hpcg)
   - Solves a sparse linear system using the conjugate gradient method, common to

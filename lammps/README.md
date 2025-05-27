@@ -48,8 +48,8 @@ metrics, please submit the following as part of your RFP response:
   plots are obtained.
 - Strong scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
-    number of atoms for 1) CPU-only runs, 2) GPU runs with KOKKOS and 3) GPU
-    runs with GPU packages
+    number of atoms for 1) CPU-only runs, 2) GPU runs with the KOKKOS package
+    and 3) GPU runs with GPU package
 - Weak scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
     number of atoms per node for CPU-only runs

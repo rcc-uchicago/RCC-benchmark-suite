@@ -19,7 +19,7 @@ MP-Gadget is a hybrid MPI/OpenMP C code.
 ## Directory Contents
 
 - [build](build)
-  - [install.sh](build/install.sh): Builds the MP-GADGET benchmark.
+  - [install.sh](build/build.sh): Builds the MP-GADGET benchmark.
     **Important**: Adapt this script to match your environment and dependencies
     before use.
 

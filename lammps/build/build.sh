@@ -29,7 +29,13 @@ export CXX=mpicxx
 # A40:  Kokkos_ARCH_AMPERE86=ON
 # H100: Kokkos_ARCH_HOPPER90=ON
 
-cmake -C ../cmake/presets/basic.cmake -D PKG_CLASS2=on -D PKG_ASPHERE=on -D PKG_GRANULAR=on -D PKG_DIPOLE=on -DPKG_OPENMP=on -D PKG_GPU=on -D GPU_API=cuda -D GPU_ARCH=sm_80 -D BUILD_MPI=yes -D BUILD_OMP=on -D PKG_KOKKOS=on -D Kokkos_ARCH_PASCAL60=off -D Kokkos_ARCH_NATIVE=yes -D Kokkos_ARCH_AMPERE80=ON -D Kokkos_ENABLE_CUDA=yes -D Kokkos_ENABLE_OPENMP=yes -D CMAKE_CXX_COMPILER=$CURRENT_DIR/lammps/lib/kokkos/bin/nvcc_wrapper -DFFT=MKL -DFFT_INCLUDE_DIR=$MKLROOT/include/fftw -DFFT_KOKKOS=CUFFT ../cmake
+cmake -C ../cmake/presets/basic.cmake -D PKG_CLASS2=on -D PKG_ASPHERE=on \
+      -D PKG_GRANULAR=on -D PKG_DIPOLE=on -DPKG_OPENMP=on \
+      -D PKG_GPU=on -D GPU_API=cuda -D GPU_ARCH=sm_80 -D BUILD_MPI=yes -D BUILD_OMP=on \
+      -D PKG_KOKKOS=on -D Kokkos_ARCH_PASCAL60=off \
+      -D Kokkos_ARCH_NATIVE=yes -D Kokkos_ARCH_AMPERE80=ON -D Kokkos_ENABLE_CUDA=yes \
+      -D Kokkos_ENABLE_OPENMP=yes -D CMAKE_CXX_COMPILER=$CURRENT_DIR/lammps/lib/kokkos/bin/nvcc_wrapper \
+      -DFFT=MKL -DFFT_INCLUDE_DIR=$MKLROOT/include/fftw -DFFT_KOKKOS=CUFFT ../cmake
 
 make -j4
 
