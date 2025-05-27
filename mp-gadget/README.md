@@ -35,13 +35,11 @@ MP-Gadget is a hybrid MPI/OpenMP C code.
   plots are obtained.
 - Strong scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
-    number of atoms for 1) CPU-only runs, 2) GPU runs with KOKKOS and 3) GPU
-    runs with GPU packages
+    number of particles
 - Hardware topology:
   - Number of physical cores per processor
   - Number of processors per node
   - Number of nodes per run
-  - Number and model of GPUs used
 - Build details:
   - Compiler(s) and library versions
   - Compilation and optimization flags used

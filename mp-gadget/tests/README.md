@@ -7,9 +7,11 @@ For each simulation, the metrics of interest is the time to solution
 as a function of the number of MPI tasks, or compute nodes. This is the strong scaling
 performance of the MP-GADGET software on the given hardware configuration.
 
-The script [run.sh](run.sh) in each folder illustrates how the runs are performed and how the output logs are generated.
+The script [job-template.sh](job-template.sh) illustrates how the runs are performed and how the output logs are generated for each folder.
 
-The performance of a run is measured by the time it takes to reach the `TimeMax` value in `paramfile.gadget`. The `output/cpu.txt` file contains the elapsed time at the final step, which can be converted
+The performance of a run is measured by the time it takes to reach the `TimeMax` value in `paramfile.gadget`. The log file `output/cpu.txt` contains the elapsed time at the final step, which can be converted
 to the performance in term of timesteps/s = number_of_timesteps / elapsed_time.
 
-Run the script [get_perf.sh](get_perf.sh) with the file output/cpu.txt to get the performance.
+The script [get_perf.sh](get_perf.sh) shows how to get the performance with the file `output/cpu.txt`.
+
+The script [get_strong_scaling.sh](get_strong_scaling.sh) shows how to get the strong scaling data with the log file from the runs.
