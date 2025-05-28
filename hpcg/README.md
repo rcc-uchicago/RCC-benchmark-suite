@@ -34,7 +34,7 @@ this repository.
 - [tests](tests)
   - [hpcg.dat](tests/hpcg.dat): Input file for benchmark runs. Vendors should
     retain the local problem dimensions of `104 104 104`. Recommended runtime is
-    **at least 3600 seconds**, though longer runs may yield more reliable
+    **at least 1800 seconds**, though longer runs may yield more reliable
     performance data.
   - [job-template.sh](tests/job-template.sh): A Slurm job submission template
     based on RCC's environment. Vendors may adapt or replace it based on their
@@ -48,7 +48,7 @@ this repository.
 Please follow these standardized conditions:
 
 - Local problem dimensions: `104 104 104` (as per `hpcg.dat`)
-- Minimum runtime per benchmark: **3600 seconds**
+- Minimum runtime per benchmark: **1800 seconds**
 - MPI must be used. Benchmarks should be performed for:
   - 1, 2, 4, 8, and 16 nodes
   - All physical cores must be used (hyperthreading must be disabled)
