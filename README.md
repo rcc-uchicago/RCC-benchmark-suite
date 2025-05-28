@@ -35,7 +35,6 @@ performance.  A brief description of each application follows.
     domains such as CFD and FEM.  
   - Focus: Strong scaling performance of matrix operations (GFLOP/s vs. number
     of nodes).
-  - GPU versions are provided by [NVIDIA](https://github.com/NVIDIA/nvidia-hpcg) and [ROCm](https://github.com/ROCm/rocHPCG)
   - Parallelization: MPI  
 
 - [HPCC](https://github.com/icl-utk-edu/hpcc)
