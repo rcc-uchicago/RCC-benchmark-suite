@@ -10,11 +10,12 @@ important information.
 
 ## Benchmark Applications
 
-The five benchmark applications included in this suite are all open-source
-software, covering three benchmark categories:
+The benchmark applications included in this suite are all open-source software,
+covering three benchmark categories:
 
 - **Standard Compute**
-  - [HPCG](hpcg): High Performance Conjugate Gradients
+  - [HPCG](hpcg): High Performance Conjugate Gradients (CPU)
+  - [HPCG-GPU](hpcg-gpu): GPU version of High Performance Conjugate Gradients
   - [HPCC](hpcc): HPC Challenge
 
 - **Scientific Applications**
@@ -26,14 +27,15 @@ software, covering three benchmark categories:
   - [IOR](ior): Parallel IO Benchmark Software
 
 These applications evaluate different aspects of HPC systems, such as compute
-capabilities, interconnect communication, memory bandwidth, and I/O performance.
-A brief description of each application follows.
+capabilities, interconnect communication, memory bandwidth, and I/O
+performance.  A brief description of each application follows.
 
 - [HPCG](https://github.com/hpcg-benchmark/hpcg)
   - Solves a sparse linear system using the conjugate gradient method, common to
     domains such as CFD and FEM.  
   - Focus: Strong scaling performance of matrix operations (GFLOP/s vs. number
     of nodes).
+  - GPU versions are provided by [NVIDIA](https://github.com/NVIDIA/nvidia-hpcg) and [ROCm](https://github.com/ROCm/rocHPCG)
   - Parallelization: MPI  
 
 - [HPCC](https://github.com/icl-utk-edu/hpcc)

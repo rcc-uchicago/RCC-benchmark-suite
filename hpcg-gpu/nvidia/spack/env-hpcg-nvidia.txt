@@ -1,0 +1,1035 @@
+==> In environment hpcg-nvidia
+==> 3 root specs
+[+] vp2t6rd cuda@12.9.0
+
+[+] lvheiar nccl cuda_arch=80
+
+[+] pjdy6a4 openmpi@4.1.8+cuda+legacylaunchers cuda_arch=80 schedulers=slurm
+
+
+-- linux-centos8-icelake / gcc@8.4.1 ----------------------------
+[+]  czijzry berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  lv5ysuq bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  lxeuqht     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  kfubgrw     m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a         libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  sumnwzm bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  lxeuqht     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  nn5eksz cmake@3.31.6~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  llwt6su     curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs:=shared,static tls:=openssl  cxxflags='-std=c++14'
+[+]  wc7e4cd         nghttp2@1.65.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3                 libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm                 bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms                 gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                     readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  llwt6su curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs:=shared,static tls:=openssl  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  wc7e4cd     nghttp2@1.65.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ygexwnp     openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6         ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei         perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry             berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms             gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                 readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf                     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  lxeuqht diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gswgdy3     libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+
+[+]  2qjgjyv expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  wtfrpq5     libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi         libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  m5gnm4i findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oigfbgg     gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b         libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro             pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp             zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla         tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh             pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s             zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  ev6pr54 flex@2.6.3+lex~nls build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq     bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  lxeuqht     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  m5gnm4i     findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro                 pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp                 zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf             ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  kfubgrw     m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a         libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  oz7qfms gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  itggwzm     readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro             pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  oigfbgg gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm     bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gswgdy3     libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b     libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla     tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh         pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s         zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d     xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+
+[+]  qutawyh gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+
+[+]  wtfrpq5 libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  s5whxvi     libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  gmc6ggf libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  gswgdy3 libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  s5whxvi libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  sd7kixp libnl@3.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq     bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  ev6pr54     flex@2.6.3+lex~nls build_system=autotools  cxxflags='-std=c++14'
+[+]  m5gnm4i         findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  oigfbgg             gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm                 bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  j3hrk4b                 libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro                     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp                     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf                 ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla                 tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                     pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                     zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d                 xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  kfubgrw     m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a         libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  yf5hz5a libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  j3hrk4b libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gswgdy3     libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d     xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  kfubgrw m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  lxeuqht     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  yf5hz5a     libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  lvheiar nccl@2.23.4-1+cuda build_system=makefile cuda_arch:=80  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  vp2t6rd     cuda@12.9.0~allow-unsupported-compilers~dev build_system=generic
+[+]  j3hrk4b         libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp             zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  52ps5to     rdma-core@57.0~ipo+man_pages+pyverbs+static build_system=cmake build_type=Release generator=make  cxxflags='-std=c++14'
+[+]  nn5eksz         cmake@3.31.6~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release  cxxflags='-std=c++14'
+[+]  llwt6su             curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs:=shared,static tls:=openssl  cxxflags='-std=c++14'
+[+]  wc7e4cd                 nghttp2@1.65.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ygexwnp                 openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6                     ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei                     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  fpp3rsf             ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  sd7kixp         libnl@3.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq             bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  lxeuqht                 diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  ev6pr54             flex@2.6.3+lex~nls build_system=autotools  cxxflags='-std=c++14'
+[+]  m5gnm4i                 findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  kfubgrw             m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a                 libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  wd4ac6i         py-docutils@0.20.1 build_system=python_pip
+[+]  jkhjnzh             py-pip@25.1.1 build_system=generic
+[+]  7du4mmj             py-setuptools@79.0.1 build_system=generic
+[+]  mcxiscv             py-wheel@0.45.1 build_system=generic
+[+]  blvkevl             python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm                 bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  2qjgjyv                 expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5                     libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                         libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  oz7qfms                 gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg                 gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla                     tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                         pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                         zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  gmc6ggf                 libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                 readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5                 sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj                 util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  h42g5tm             python-venv@1.0 build_system=generic
+
+[+]  fpp3rsf ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  wc7e4cd nghttp2@1.65.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  lxeuqht     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  ygexwnp openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6     ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  vvi3hei     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3                 libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf                 ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro                     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  vvi3hei perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry     berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm     bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms     gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm         readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf             ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro                 pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  kdni2hh pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  mlfguro pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  blvkevl python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm     bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  2qjgjyv     expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5         libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi             libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms     gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg     gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b         libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla         tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh             pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s             zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gmc6ggf     libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp     openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6         ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei         perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry             berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm     readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5     sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj     util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d     xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  52ps5to rdma-core@57.0~ipo+man_pages+pyverbs+static build_system=cmake build_type=Release generator=make  cxxflags='-std=c++14'
+[+]  nn5eksz     cmake@3.31.6~doc+ncurses+ownlibs~qtgui build_system=generic build_type=Release  cxxflags='-std=c++14'
+[+]  llwt6su         curl@8.11.1~gssapi~ldap~libidn2~librtmp~libssh~libssh2+nghttp2 build_system=autotools libs:=shared,static tls:=openssl  cxxflags='-std=c++14'
+[+]  wc7e4cd             nghttp2@1.65.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ygexwnp             openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6                 ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei                 perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                     berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  sd7kixp     libnl@3.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq         bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3                 libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ev6pr54         flex@2.6.3+lex~nls build_system=autotools  cxxflags='-std=c++14'
+[+]  m5gnm4i             findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  kfubgrw         m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a             libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  wd4ac6i     py-docutils@0.20.1 build_system=python_pip
+[+]  jkhjnzh         py-pip@25.1.1 build_system=generic
+[+]  7du4mmj         py-setuptools@79.0.1 build_system=generic
+[+]  mcxiscv         py-wheel@0.45.1 build_system=generic
+[+]  blvkevl         python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  2qjgjyv             expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5                 libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                     libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  oz7qfms             gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg             gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  j3hrk4b                 libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla                 tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                     pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                     zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  gmc6ggf             libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5             sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj             util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  h42g5tm         python-venv@1.0 build_system=generic
+
+[+]  itggwzm readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  4q6fmd5 sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  itggwzm     readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro             pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  gw6kyla tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  sumnwzm     bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gswgdy3     libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  kdni2hh     pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d     xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  jszie6s     zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+
+[+]  bax3gcj util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  tgico6d xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  ive3ptp zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+[+]  jszie6s zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+
+
+-- linux-centos8-icelake / gcc@8.4.1 ----------------------------
+[+]  itdfxvh automake@1.16.5 build_system=autotools  cxxflags='-std=c++14'
+[+]  njdtr3v     autoconf@2.72 build_system=autotools
+[+]  kfubgrw         m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3                 libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  yf5hz5a             libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  vvi3hei     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf                 ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro                     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  i7bfoiw hwloc@2.11.1~cairo+cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools cuda_arch:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  vp2t6rd     cuda@12.9.0~allow-unsupported-compilers~dev build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  g7wakl6     libpciaccess@0.17 build_system=autotools  cxxflags='-std=c++14'
+[+]  3ndyx4o         util-macros@1.20.1 build_system=autotools
+[+]  j3hrk4b     libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  3srgpev krb5@1.21.3+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq     bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  kfubgrw         m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a             libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  lxeuqht     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  m5gnm4i     findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oigfbgg     gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  j3hrk4b         libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla         tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh             pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s             zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  dpqqrpj     libedit@3.1-20240808 build_system=autotools  cxxflags='-std=c++14'
+[+]  ygexwnp     openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6         ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  vvi3hei     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  dpqqrpj libedit@3.1-20240808 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  xbcbeux libevent@2.1.12+openssl build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  ygexwnp     openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6         ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei         perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry             berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht                 diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3                     libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  oz7qfms             gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                 readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf                     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro                         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  g7wakl6 libpciaccess@0.17 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  3ndyx4o     util-macros@1.20.1 build_system=autotools
+
+[+]  e3gn5fb libtool@2.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  m5gnm4i     findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro                 pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp                 zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf             ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  kfubgrw     m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  yf5hz5a         libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  2jolp6h libxcrypt@4.4.38~obsolete_api build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  vvi3hei     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3                 libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf                 ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro                     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  qt2wk6c numactl@2.0.18 build_system=autotools  cxxflags='-std=c++14'
+[+]  njdtr3v     autoconf@2.72 build_system=autotools
+[+]  vvi3hei         perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry             berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms             gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                 readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  ive3ptp             zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  itdfxvh     automake@1.16.5 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  e3gn5fb     libtool@2.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  m5gnm4i         findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  oigfbgg             gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  j3hrk4b                 libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  mlfguro                     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf                 ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  gw6kyla                 tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                     pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                     zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d                 xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  kfubgrw     m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  yf5hz5a         libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+
+[+]  pjdy6a4 openmpi@4.1.8+atomics+cuda~cxx~cxx_exceptions~debug~gpfs~internal-hwloc~internal-libevent~internal-pmix~ipv6~java+legacylaunchers~lustre~memchecker~openshmem~orterunprefix~pmi+romio+rsh~singularity~static~two_level_namespace+vt+wrapper-rpath build_system=autotools cuda_arch:=80 fabrics:=none patches:=38529b5 romio-filesystem:=none schedulers:=slurm  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[+]  vp2t6rd     cuda@12.9.0~allow-unsupported-compilers~dev build_system=generic
+[+]  j3hrk4b         libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  i7bfoiw     hwloc@2.11.1~cairo+cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools cuda_arch:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  g7wakl6         libpciaccess@0.17 build_system=autotools  cxxflags='-std=c++14'
+[+]  3ndyx4o             util-macros@1.20.1 build_system=autotools
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  xbcbeux     libevent@2.1.12+openssl build_system=autotools  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  qt2wk6c     numactl@2.0.18 build_system=autotools  cxxflags='-std=c++14'
+[+]  njdtr3v         autoconf@2.72 build_system=autotools
+[+]  itdfxvh         automake@1.16.5 build_system=autotools  cxxflags='-std=c++14'
+[+]  e3gn5fb         libtool@2.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  m5gnm4i             findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  kfubgrw         m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  yf5hz5a             libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  zqrutog     openssh@9.9p1+gssapi build_system=autotools  cxxflags='-std=c++14'
+[+]  3srgpev         krb5@1.21.3+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq             bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg             gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla                 tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                     pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                     zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  dpqqrpj         libedit@3.1-20240808 build_system=autotools  cxxflags='-std=c++14'
+[+]  2jolp6h         libxcrypt@4.4.38~obsolete_api build_system=autotools  cxxflags='-std=c++14'
+[+]  vvi3hei     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  rxwg2tf     pmix@5.0.5~munge~python build_system=autotools  cxxflags='-std=c++14'
+[e]  meyrdxm     slurm@20.11.8~cgroup~gtk~hdf5~hwloc~mariadb~nvml~pam~pmix+readline~restd~rsmi build_system=autotools sysconfdir=PREFIX/etc
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  zqrutog openssh@9.9p1+gssapi build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  3srgpev     krb5@1.21.3+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  lv5ysuq         bison@3.8.2~color build_system=autotools  cxxflags='-std=c++14'
+[+]  kfubgrw             m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  yf5hz5a                 libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  m5gnm4i         findutils@4.10.0 build_system=autotools patches:=440b954  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  sumnwzm             bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  vvi3hei         perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry             berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  oz7qfms             gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                 readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  dpqqrpj     libedit@3.1-20240808 build_system=autotools  cxxflags='-std=c++14'
+[+]  2jolp6h     libxcrypt@4.4.38~obsolete_api build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf     ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp     openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6         ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  rxwg2tf pmix@5.0.5~munge~python build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw     compiler-wrapper@1.0 build_system=generic
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[+]  pbanjji     gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  i7bfoiw     hwloc@2.11.1~cairo+cuda~gl~level_zero~libudev+libxml2~nvml~opencl+pci~rocm build_system=autotools cuda_arch:=none libs:=shared,static  cxxflags='-std=c++14'
+[+]  vp2t6rd         cuda@12.9.0~allow-unsupported-compilers~dev build_system=generic
+[+]  g7wakl6         libpciaccess@0.17 build_system=autotools  cxxflags='-std=c++14'
+[+]  3ndyx4o             util-macros@1.20.1 build_system=autotools
+[+]  j3hrk4b         libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  tgico6d             xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  xbcbeux     libevent@2.1.12+openssl build_system=autotools  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm                 bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht                     diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  oz7qfms                 gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm                     readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  mlfguro     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp     zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+
+-- linux-centos8-icelake / no compiler --------------------------
+[+]  njdtr3v autoconf@2.72 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  kfubgrw     m4@1.4.19+sigsegv build_system=autotools patches:=9dc5fbd,bfdffa7  cxxflags='-std=c++14'
+[+]  lxeuqht         diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  yf5hz5a         libsigsegv@2.14 build_system=autotools  cxxflags='-std=c++14'
+[+]  vvi3hei     perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry         berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm             readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  fpp3rsf                 ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  mlfguro                     pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[+]  vkly4a6 ca-certificates-mozilla@2025-02-25 build_system=generic
+
+[+]  drfaxkw compiler-wrapper@1.0 build_system=generic
+
+[+]  vp2t6rd cuda@12.9.0~allow-unsupported-compilers~dev build_system=generic
+[+]  j3hrk4b     libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  qutawyh         gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gswgdy3         libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[e]  uxoyy2h gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+
+[e]  74db6ix gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+
+[+]  bgmxs7z gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  uxoyy2h     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+
+[+]  pbanjji gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  74db6ix     gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++,fortran' patches:=98a9c96,d4919d6
+[e]  fbbnnw4     glibc@2.28 build_system=autotools
+
+[e]  fbbnnw4 glibc@2.28 build_system=autotools
+
+[+]  wd4ac6i py-docutils@0.20.1 build_system=python_pip
+[+]  jkhjnzh     py-pip@25.1.1 build_system=generic
+[+]  7du4mmj     py-setuptools@79.0.1 build_system=generic
+[+]  mcxiscv     py-wheel@0.45.1 build_system=generic
+[+]  blvkevl     python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[+]  2qjgjyv         expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5             libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                 libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  qutawyh         gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gmc6ggf         libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm         readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5         sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj         util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  h42g5tm     python-venv@1.0 build_system=generic
+
+[+]  jkhjnzh py-pip@25.1.1 build_system=generic
+[+]  blvkevl     python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[+]  2qjgjyv         expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5             libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                 libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  qutawyh         gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gmc6ggf         libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm         readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5         sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj         util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  h42g5tm     python-venv@1.0 build_system=generic
+
+[+]  7du4mmj py-setuptools@79.0.1 build_system=generic
+[+]  jkhjnzh     py-pip@25.1.1 build_system=generic
+[+]  blvkevl     python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[+]  2qjgjyv         expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5             libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                 libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  qutawyh         gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gmc6ggf         libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm         readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5         sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj         util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  h42g5tm     python-venv@1.0 build_system=generic
+
+[+]  mcxiscv py-wheel@0.45.1 build_system=generic
+[+]  jkhjnzh     py-pip@25.1.1 build_system=generic
+[+]  blvkevl     python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[+]  2qjgjyv         expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5             libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                 libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  qutawyh         gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gmc6ggf         libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm         readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5         sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj         util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  h42g5tm     python-venv@1.0 build_system=generic
+
+[+]  h42g5tm python-venv@1.0 build_system=generic
+[+]  blvkevl     python@3.13.2+bz2+ctypes+dbm~debug+libxml2+lzma~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tkinter+uuid+zlib build_system=generic  cxxflags='-std=c++14'
+[+]  sumnwzm         bzip2@1.0.8~debug~pic+shared build_system=generic  cxxflags='-std=c++14'
+[+]  lxeuqht             diffutils@3.10 build_system=autotools  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[+]  2qjgjyv         expat@2.7.1+libbsd build_system=autotools  cxxflags='-std=c++14'
+[+]  wtfrpq5             libbsd@0.12.2 build_system=autotools  cxxflags='-std=c++14'
+[+]  s5whxvi                 libmd@1.1.0 build_system=autotools  cxxflags='-std=c++14'
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[+]  oz7qfms         gdbm@1.23 build_system=autotools  cxxflags='-std=c++14'
+[+]  oigfbgg         gettext@0.23.1+bzip2+curses+git~libunistring+libxml2+pic+shared+tar+xz build_system=autotools  cxxflags='-std=c++14'
+[+]  gswgdy3             libiconv@1.18 build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  j3hrk4b             libxml2@2.13.5~http+pic~python+shared build_system=autotools  cxxflags='-std=c++14'
+[+]  gw6kyla             tar@1.35 build_system=autotools zip=pigz  cxxflags='-std=c++14'
+[+]  kdni2hh                 pigz@2.8 build_system=makefile  cxxflags='-std=c++14'
+[+]  jszie6s                 zstd@1.5.7+programs build_system=makefile compression:=none libs:=shared,static  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+[+]  qutawyh         gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  gmc6ggf         libffi@3.4.7 build_system=autotools  cxxflags='-std=c++14'
+[+]  fpp3rsf         ncurses@6.5~symlinks+termlib abi=none build_system=autotools patches:=7a351bc  cxxflags='-std=c++14'
+[+]  ygexwnp         openssl@3.4.1~docs+shared build_system=generic certs=mozilla  cxxflags='-std=c++14'
+[+]  vkly4a6             ca-certificates-mozilla@2025-02-25 build_system=generic
+[+]  vvi3hei             perl@5.40.0+cpanm+opcode+open+shared+threads build_system=generic  cxxflags='-std=c++14'
+[+]  czijzry                 berkeley-db@18.1.40+cxx~docs+stl build_system=autotools patches:=26090f4,b231fcc  cxxflags='-std=c++14'
+[+]  mlfguro         pkgconf@2.3.0 build_system=autotools  cxxflags='-std=c++14'
+[+]  itggwzm         readline@8.2 build_system=autotools patches:=1ea4349,24f587b,3d9885e,5911a5b,622ba38,6c8adf8,758e2ec,79572ee,a177edc,bbf97f1,c7b45ff,e0013d9,e065038  cxxflags='-std=c++14'
+[+]  4q6fmd5         sqlite@3.46.0+column_metadata+dynamic_extensions+fts~functions+rtree build_system=autotools  cxxflags='-std=c++14'
+[+]  bax3gcj         util-linux-uuid@2.41 build_system=autotools  cxxflags='-std=c++14'
+[+]  tgico6d         xz@5.6.3~pic build_system=autotools libs:=shared,static  cxxflags='-std=c++14'
+[+]  ive3ptp         zlib-ng@2.2.4+compat+new_strategies+opt+pic+shared build_system=autotools  cxxflags='-std=c++14'
+
+[e]  meyrdxm slurm@20.11.8~cgroup~gtk~hdf5~hwloc~mariadb~nvml~pam~pmix+readline~restd~rsmi build_system=autotools sysconfdir=PREFIX/etc
+
+[+]  3ndyx4o util-macros@1.20.1 build_system=autotools
+[+]  qutawyh     gmake@4.4.1~guile build_system=generic  cxxflags='-std=c++14'
+[+]  drfaxkw         compiler-wrapper@1.0 build_system=generic
+[e]  uxoyy2h         gcc@8.4.1~binutils+bootstrap~graphite~nvptx~piclibs~profiled~strip build_system=autotools build_type=RelWithDebInfo languages:='c,c++' patches:=98a9c96,d4919d6
+[+]  bgmxs7z         gcc-runtime@8.4.1 build_system=generic  cxxflags='-std=c++14'
+[e]  fbbnnw4         glibc@2.28 build_system=autotools
+

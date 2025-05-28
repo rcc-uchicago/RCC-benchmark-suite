@@ -1,0 +1,5 @@
+#nodes,ntasks-per-node,gpus-per-node,gpus-total,nodelist
+1,1,1,1,node01
+1,2,2,2,node01
+1,4,4,4,node01
+2,4,4,8,node0[1-2]
