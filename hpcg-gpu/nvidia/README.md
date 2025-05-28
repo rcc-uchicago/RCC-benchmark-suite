@@ -61,9 +61,14 @@ Please follow these standardized conditions:
     - 1 node, 2 GPUs
     - 1 node, 4 GPUs
     - 2 nodes, 8 GPUs
-  - Typically best performance is achieved with one MPI task per GPU and four
-    threads per MPI task. Vendors may change these parameters to achieve better
-    performance on the same hardware as specified for the cases above.
+- Typically best performance is achieved with one MPI task per GPU and four
+  threads per MPI task. Vendors may change these parameters to achieve better
+  performance on the same hardware as specified for the cases above.
+- Multiple independent runs with 1 node and 1 GPU are only allowed for the
+  first case (1 node, 1 GPU). For all other cases, vendors must perform
+  actual parallel benchmarks across multiple GPUs and/or nodes. Summing the
+  GFLOPs from independent single-GPU runs for multi-GPU cases will not be
+  accepted.
 
 ## What to Submit
 
