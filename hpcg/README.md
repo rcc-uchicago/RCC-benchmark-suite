@@ -38,7 +38,8 @@ this repository.
     performance data.
   - [job-template.sh](tests/job-template.sh): A Slurm job submission template
     based on RCC's environment. Vendors may adapt or replace it based on their
-    own job scheduling systems.
+    own job scheduling systems. This should not be submitted directly and is used
+    by `run.sh` below.
   - [run.sh](tests/run.sh): Script to generate and submit HPCG runs based on the
     job template.
 

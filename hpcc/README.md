@@ -31,14 +31,15 @@ FFT, communication bandwidth and latency.
   **not** reference results and are included for formatting guidance only.
 
 - [tests](tests)
-  - [hpccinf.txt](tests/hpccinf.txt): Input file for benchmark runs. Vendors must
-    tune `P`, `Q`, `N`, and `NB` according to the hardware and job configuration
-    to achieve optimal performance.
+  - [hpccinf.txt](tests/hpccinf.txt): Input file for benchmark runs. Vendors
+    must tune `P`, `Q`, `N`, and `NB` according to the hardware and job
+    configuration to achieve optimal performance.
   - [job-template.sh](tests/job-template.sh): A Slurm job submission template
     based on RCC's environment. Vendors may adapt or replace it based on their
-    own job scheduling systems.
-  - [run.sh](tests/run.sh): Script to generate and submit HPCC runs based on the
-    job template.
+    own job scheduling systems. This should not be submitted directly and is used
+    by `run.sh` below.
+  - [run.sh](tests/run.sh): Script to generate and submit HPCC runs based on
+    the job template. This is the sc
 
 ## Benchmarking Requirements
 

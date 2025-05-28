@@ -1,4 +1,4 @@
-# RCC-Benchmark-Suite
+# RCC Benchmark Suite
 
 This repository collects and maintains the benchmark suite that RCC makes
 available to vendors. It includes specific versions of each benchmark software
