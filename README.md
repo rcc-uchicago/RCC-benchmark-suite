@@ -23,6 +23,9 @@ covering three benchmark categories:
   - [MP-GADGET](mp-gadget): Massively Parallel Cosmological SPH Simulation
     Software
 
+- **Machine Learning**
+  - [MLPerf](mlperf): MLPerf Training and Inference Benchmark
+
 - **Storage**
   - [IOR](ior): Parallel IO Benchmark Software
 
@@ -43,6 +46,15 @@ performance.  A brief description of each application follows.
   - Focus: Memory bandwidth and access patterns within a node and inter-node
     communication.
   - Parallelization: MPI
+
+- [MLPerf](https://github.com/mlcommons)
+  - The [MLPerf Training: HPC](https://mlcommons.org/benchmarks/training-hpc/)
+    benchmark suite measures how fast systems can train models to a target
+    quality metric.
+  - The [MLPerf Inference:
+    Datacenter](https://mlcommons.org/benchmarks/inference-datacenter/)
+    benchmark suite measures how fast systems can process inputs and produce
+    results using a trained model.
 
 - [LAMMPS](https://github.com/lammps/lammps)
   - LAMMPS performs classical Molecular Dynamics simulations with short-ranged
