@@ -69,14 +69,9 @@ according to the number of nodes and GPUs used for the tests.
 - Paramters as described in the tables above
 - Systems and cases to run the benchmarks. **Note:** the language "higher" and
   "lower" precision used here is the same used in the RFP.
-  - 2 nodes with 4 higher precision GPUs each (8 GPUs total)
   - 4 nodes with 4 higher precision GPUs each (16 GPUs total)
-  - 8 nodes with 4 higher precision GPUs each (32 GPUs total)
-  - 2 nodes with 4 lower precision GPUs each (8 GPUs total)
   - 4 nodes with 4 lower precision GPUs each (16 GPUs total)
-  - 8 nodes with 4 lower precision GPUs each (32 GPUs total)
   - 2 nodes with 8 lower precision GPUs each (16 GPUs total)
-  - 4 nodes with 8 lower precision GPUs each (32 GPUs total)
 - At least two runs for each system is expected
 - For all runs training should be done using **single precision**
 - Values entered in the provided Excel sheet (Time to Solution) should be the
