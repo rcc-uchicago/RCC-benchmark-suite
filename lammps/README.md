@@ -52,6 +52,8 @@ metrics, please submit the following as part of your RFP response:
     - CPU-only runs,
     - GPU runs with the KOKKOS package, and
     - GPU runs with GPU package in mixed precision.
+  - Walltime in seconds for each run obtained by measuring the time LAMMPS takes
+    to start end finish
 - Weak scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
     number of atoms per node for CPU-only runs

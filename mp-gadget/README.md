@@ -35,6 +35,8 @@ MP-Gadget is a hybrid MPI/OpenMP C code.
 
 - The log files from the runs from which the performance data points for the
   plots are obtained.
+- Walltime in seconds for each run obtained by measuring the time it takes the
+  application to start and finish
 - Strong scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
     number of particles

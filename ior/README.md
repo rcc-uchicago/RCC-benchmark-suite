@@ -54,6 +54,7 @@ Please follow these standardized conditions:
 - MPI must be used. Benchmarks should be performed for:
   - 1, 2, 4, 8, and 16 nodes
   - All physical cores must be used (hyperthreading must be disabled)
+- Timings for the runs should be extracted from the output files
 - This benchmark should be run preferably in a parallel file system such as
   Storage Scale (GPFS).
 
