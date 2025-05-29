@@ -1,4 +1,4 @@
-# LAMMPS Benchmarking GUide
+# LAMMPS Benchmarking Guide
 
 [LAMMPS](https://github.com/lammps/lammps) is a classical molecular dynamics
 code with a focus on materials modeling. It's an acronym for Large-scale
@@ -48,8 +48,10 @@ metrics, please submit the following as part of your RFP response:
   plots are obtained.
 - Strong scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
-    number of atoms for 1) CPU-only runs, 2) GPU runs with the KOKKOS package
-    and 3) GPU runs with GPU package
+    number of atoms for
+    - CPU-only runs, 
+    - GPU runs with the KOKKOS package, and
+    - GPU runs with GPU package in mixed precision.
 - Weak scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
     number of atoms per node for CPU-only runs

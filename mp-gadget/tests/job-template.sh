@@ -38,6 +38,8 @@ do
 
     # run the simulation
     mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GADGET_BINARY paramfile.gadget > out.n-$n.ppn-$ppn.t-$nt
+
+    # store the output/cpu.txt in to a log file whose name includes the number of nodes, ppn and nt
     cp output/cpu.txt log.n-$n.ppn-$ppn.t-$nt
   done
 done

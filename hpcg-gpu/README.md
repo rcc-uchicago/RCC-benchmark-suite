@@ -47,11 +47,11 @@ Performance Conjugate Gradients (HPCG) Benchmark.
 
 - [output](output)
   - Contains example output files for the following cases:
-    - 1 node, 1 GPUs
+    - 1 node, 1 GPU
     - 1 node, 2 GPUs
     - 1 node, 4 GPUs
     - 2 nodes, 8 GPUs
-    These **not** reference results and are included for formatting guidance
+    These are **not** reference results and are included for formatting guidance
     only.
 
 - [tests](tests)
@@ -78,7 +78,7 @@ Please follow these standardized conditions:
 - Local problem dimensions: `256 256 256` (as per `hpcg.dat`)
 - Minimum runtime per benchmark: **1800 seconds**
 - MPI must be used. Benchmarks should be performed for these cases:
-    - 1 node, 1 GPUs
+    - 1 node, 1 GPU
     - 1 node, 2 GPUs
     - 1 node, 4 GPUs
     - 2 nodes, 8 GPUs
