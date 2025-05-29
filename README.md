@@ -84,7 +84,7 @@ performance.  A brief description of each application follows.
 respective application directory at the root of this repository. Each
 application directory is organized as follows:
 
-```
+```text
 application/
 ├── README.md  # Application specific instructions, PLEASE DO NOT SKIP
 ├── build/     # Scripts and source (or link to source) for building the application
@@ -115,4 +115,3 @@ and governed by their respective licenses.
 The specific benchmark details, scripts, and input files provided in this
 repository are governed by the [LICENSE](LICENSE) file of this repository.
 Please refer to this file for terms of usage and distribution.
-

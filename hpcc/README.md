@@ -12,7 +12,7 @@ FFT, communication bandwidth and latency.
 
 **Version**: 1.5.0
 
-**Source**: https://github.com/icl-utk-edu/hpcc
+**Source**: <https://github.com/icl-utk-edu/hpcc>
 
 ## Directory Contents
 

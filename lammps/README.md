@@ -13,7 +13,7 @@ LAMMPS runs on single processors or in parallel using message-passing techniques
 and a spatial-decomposition of the simulation domain. Many of its models have
 versions that provide accelerated performance on CPUs, GPUs, and Intel Xeon
 Phis. The code is designed to be easy to modify or extend with new
-functionality. 
+functionality.
 
 LAMMPS is a hybrid MPI/OpenMP C/C++ code with GPU support with the Kokkos
 package (CUDA, HIP, SYCL) and GPU package (CUDA, OpenCL, HIP).
@@ -22,7 +22,7 @@ package (CUDA, HIP, SYCL) and GPU package (CUDA, OpenCL, HIP).
 
 **Version**: stable_29Aug2024 or later
 
-**Source**: https://github.com/lammps/lammps
+**Source**: <https://github.com/lammps/lammps>
 
 ## Directory Contents
 
@@ -49,7 +49,7 @@ metrics, please submit the following as part of your RFP response:
 - Strong scaling plots
   - Performance (timesteps/s) as a function of number of MPI tasks for a fixed
     number of atoms for
-    - CPU-only runs, 
+    - CPU-only runs,
     - GPU runs with the KOKKOS package, and
     - GPU runs with GPU package in mixed precision.
 - Weak scaling plots

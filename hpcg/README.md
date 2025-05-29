@@ -13,7 +13,7 @@ this repository.
 
 **Version**: 3.1
 
-**Source**: https://github.com/hpcg-benchmark/hpcg
+**Source**: <https://github.com/hpcg-benchmark/hpcg>
 
 ## Directory Contents
 

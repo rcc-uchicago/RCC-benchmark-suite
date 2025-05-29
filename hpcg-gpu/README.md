@@ -27,13 +27,13 @@ part of the RCC Request for Proposals (RFP) process.
 
 NVIDIA HPCG is based on the HPCG benchmark and optimized for performance on
 NVIDIA accelerated HPC systems. NVIDIA's HPCG benchmark accelerates the High
-Performance Conjugate Gradients (HPCG) Benchmark. 
+Performance Conjugate Gradients (HPCG) Benchmark.
 
 **Category**: HPC, Benchmark, Numerical Methods
 
 **Version**: 3.1 git [7d5c0b8](https://github.com/NVIDIA/nvidia-hpcg/tree/7d5c0b85057ea38fe291793db163f55e3a5cda13)
 
-**Source**: https://github.com/NVIDIA/nvidia-hpcg
+**Source**: <https://github.com/NVIDIA/nvidia-hpcg>
 
 ## Directory Contents
 
@@ -78,10 +78,10 @@ Please follow these standardized conditions:
 - Local problem dimensions: `256 256 256` (as per `hpcg.dat`)
 - Minimum runtime per benchmark: **1800 seconds**
 - MPI must be used. Benchmarks should be performed for these cases:
-    - 1 node, 1 GPU
-    - 1 node, 2 GPUs
-    - 1 node, 4 GPUs
-    - 2 nodes, 8 GPUs
+  - 1 node, 1 GPU
+  - 1 node, 2 GPUs
+  - 1 node, 4 GPUs
+  - 2 nodes, 8 GPUs
 - Typically best performance is achieved with one MPI task per GPU and four
   threads per MPI task. Vendors may change these parameters to achieve better
   performance on the same hardware as specified for the cases above.

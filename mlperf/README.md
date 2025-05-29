@@ -11,17 +11,17 @@ machine learning systems. In this benchmark we are specifically focusing on the 
 
 **Version**: 3.0
 
-**Source**: https://github.com/mlcommons/hpc/
+**Source**: <https://github.com/mlcommons/hpc/>
 
 ## Repositories
 
 The official repository for the MLPerf Training HPC benchmark is
-https://github.com/mlcommons/hpc/. This repository contains the reference
+<https://github.com/mlcommons/hpc/>. This repository contains the reference
 implementation that vendors can use to build their own implementations
 
 We encourage vendors to explore configuration and results of existing
 submissions to the latest MLPerf Training HPC edition in
-https://github.com/mlcommons/hpc_results_v3.0/ to see concrete examples of how
+<https://github.com/mlcommons/hpc_results_v3.0/> to see concrete examples of how
 to run the DeepCAM benchmark.
 
 ## Target and Parameters
@@ -74,6 +74,7 @@ according to the number of nodes and GPUs used for the tests.
   - 2 nodes with 8 single-precision GPUs each (16 GPUs total)
   - 4 nodes with 8 single-precision GPUs each (32 GPUs total)
 - At least two runs for each system is expected
+- For all runs training should be done using **single precision**
 
 ## What to Submit
 
