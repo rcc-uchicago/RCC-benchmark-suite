@@ -67,21 +67,28 @@ according to the number of nodes and GPUs used for the tests.
 
 - Quality Target of `IOU 0.82`
 - Paramters as described in the tables above
-- Systems and cases to run the benchmarks
-  - 2 nodes with 4 double-precision GPUs each (8 GPUs total)
-  - 4 nodes with 4 double-precision GPUs each (16 GPUs total)
-  - 8 nodes with 4 double-precision GPUs each (32 GPUs total)
-  - 2 nodes with 8 single-precision GPUs each (16 GPUs total)
-  - 4 nodes with 8 single-precision GPUs each (32 GPUs total)
+- Systems and cases to run the benchmarks. **Note:** the language "higher" and
+  "lower" precision used here is the same used in the RFP.
+  - 2 nodes with 4 higher precision GPUs each (8 GPUs total)
+  - 4 nodes with 4 higher precision GPUs each (16 GPUs total)
+  - 8 nodes with 4 higher precision GPUs each (32 GPUs total)
+  - 2 nodes with 4 lower precision GPUs each (8 GPUs total)
+  - 4 nodes with 4 lower precision GPUs each (16 GPUs total)
+  - 8 nodes with 4 lower precision GPUs each (32 GPUs total)
+  - 2 nodes with 8 lower precision GPUs each (16 GPUs total)
+  - 4 nodes with 8 lower precision GPUs each (32 GPUs total)
 - At least two runs for each system is expected
 - For all runs training should be done using **single precision**
+- Values entered in the provided Excel sheet (Time to Solution) should be the
+  time difference (in minutes) between the first entry in the [output log
+  file](results_example.txt) and the last entry.
 
 ## What to Submit
 
 In addition to populating the provided Excel sheet with the relevant performance
 metrics, please submit the following as part of your RFP response:
 
-- DeepCAM training output files, see [example](results.txt)
+- DeepCAM training output files, see [example](results_example.txt)
 - Hardware topology:
   - Number of physical cores per processor
   - Number of processors per node
