@@ -18,10 +18,8 @@ covering three benchmark categories:
   - [HPCG-GPU](hpcg-gpu): GPU version of High Performance Conjugate Gradients
   - [HPCC](hpcc): HPC Challenge
 
-- **Scientific Applications**
+- **Scientific Application**
   - [LAMMPS](lammps): Molecular Dynamics Simulator
-  - [MP-GADGET](mp-gadget): Massively Parallel Cosmological SPH Simulation
-    Software
 
 - **Machine Learning**
   - [MLPerf](mlperf): MLPerf Training and Inference Benchmark
@@ -63,13 +61,6 @@ performance.  A brief description of each application follows.
     (timesteps/s vs. # of nodes or # of MPI tasks)
   - Parallelization: MPI, also supporting both multithreading and GPU
     acceleration
-
-- [MP-GADGET](https://github.com/MP-Gadget/MP-Gadget)
-  - MP-GADGET performs N-body simulations with smooth particle hydrodynamics
-    and long-range gravitational interactions
-  - The focus is on the strong scaling performance of the whole application
-    (steps/s vs. # of nodes or # of MPI tasks)
-  - Parallelization: MPI, also supporting mulithreading
 
 - [IOR](https://github.com/hpc/ior)
   - Measures parallel file system I/O performance using various interfaces
