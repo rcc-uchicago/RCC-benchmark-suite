@@ -9,3 +9,4 @@
 
 file=$1
 grep timesteps/s $1 | sed 's/,//g' | awk '{printf("Performance: %s timesteps/s\n", $4);}'
+grep "wall time" $1 | awk '{printf("Wall time: %s\n", $4);}'

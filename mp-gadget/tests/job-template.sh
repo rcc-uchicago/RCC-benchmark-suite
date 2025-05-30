@@ -31,13 +31,16 @@ do
     # num threads to occupy all the cores allocated
     nt=$(( total_cpus_per_node / ppn ))
 
+    # remove the existing output directory
+    rm -rf output/
+
     export OMP_NUM_THREADS=$nt
 
     # generate the initial conditions
-    mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GENIC_BINARY paramfile.genic > initial_bc.n-$n.ppn-$ppn.t-$nt
+    time mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GENIC_BINARY paramfile.genic > out.n-$n.ppn-$ppn.t-$nt 2>&1
 
     # run the simulation
-    mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GADGET_BINARY paramfile.gadget > out.n-$n.ppn-$ppn.t-$nt
+    time mpirun -np $n -ppn $ppn --bind-to core --map-by numa $GADGET_BINARY paramfile.gadget >> out.n-$n.ppn-$ppn.t-$nt 2>&1
 
     # store the output/cpu.txt in to a log file whose name includes the number of nodes, ppn and nt
     cp output/cpu.txt log.n-$n.ppn-$ppn.t-$nt
