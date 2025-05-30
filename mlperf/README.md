@@ -5,7 +5,9 @@ HPC](https://mlcommons.org/benchmarks/training-hpc/) benchmark as part of the
 RCC Request for Proposals (RFP) process.
 
 MLPerf is a widely recognized benchmark suite for evaluating the performance of
-machine learning systems. In this benchmark we are specifically focusing on the **DeepCAM** model of the [MLPerf Training HPC](https://mlcommons.org/benchmarks/training-hpc/) benchmark suite.
+machine learning systems. In this benchmark we are specifically focusing on the
+**DeepCAM** model of the [MLPerf Training
+HPC](https://mlcommons.org/benchmarks/training-hpc/) benchmark suite.
 
 **Category**: HPC, Benchmark, Machine Learning
 
@@ -15,14 +17,23 @@ machine learning systems. In this benchmark we are specifically focusing on the 
 
 ## Repositories
 
-The official repository for the MLPerf Training HPC benchmark is
-<https://github.com/mlcommons/hpc/>. This repository contains the reference
-implementation that vendors can use to build their own implementations
+The official repository for the DeepCAM model within the MLPerf Training HPC
+benchmark is <https://github.com/mlcommons/hpc/tree/main/deepcam>. This
+repository contains the reference implementation that vendors can use to build
+their own implementations
 
 We encourage vendors to explore configuration and results of existing
 submissions to the latest MLPerf Training HPC edition in
 <https://github.com/mlcommons/hpc_results_v3.0/> to see concrete examples of how
 to run the DeepCAM benchmark.
+
+## Obtaining Training Data
+
+The [official repository](https://github.com/mlcommons/hpc/tree/main/deepcam)
+descibes how to obtain the training data required to run the DeepCAM benchmark.
+The data is made available through an open-access [Globus
+endpoint](https://app.globus.org/file-manager?origin_id=0b226e2c-4de0-11ea-971a-021304b0cca7&origin_path=%2F).
+Please refer to the documentation linked above for more details.
 
 ## Target and Parameters
 
