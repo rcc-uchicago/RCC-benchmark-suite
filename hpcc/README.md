@@ -40,29 +40,3 @@ FFT, communication bandwidth and latency.
     by `run.sh` below.
   - [run.sh](tests/run.sh): Script to generate and submit HPCC runs based on
     the job template. This is the sc
-
-## Benchmarking Requirements
-
-Please follow these standardized conditions:
-
-- Single-node runs only.
-- MPI must be used. Benchmarks should utilize **all physical cores**.
-- Set `P`, `Q`, `N`, and `NB` to optimize performance for your hardware.
-- Total memory usage must fall between **82% and 88%** of the node's available memory.
-
-## What to Submit
-
-In addition to populating the provided Excel sheet with the relevant performance
-metrics, please submit the following as part of your RFP response:
-
-- HPCC output file: `hpccoutf.txt`
-- Hardware topology:
-  - Number of physical cores per processor
-  - Number of processors per node
-  - Number of nodes per run
-- Build details:
-  - Compiler(s) and library versions
-  - Compilation and optimization flags used
-- Runtime environment:
-  - Commands used for launching jobs
-  - Any system tuning or configuration details

@@ -2,11 +2,10 @@
 
 This repository collects and maintains the benchmark suite that RCC makes
 available to vendors. It includes specific versions of each benchmark software
-and input files to be used by vendors, as well as details on what information
-RCC expects for each benchmark.
+and input files, as well as details on what information RCC expects for each
+benchmark.
 
-If you are a vendor, please read this README in its entirety as it contains
-important information.
+This version has been tailored for the AI4S GPU Cluster RFSQ process.
 
 ## Benchmark Applications
 
@@ -96,15 +95,6 @@ Each `build/` directory includes a script called `build.sh` that can be used to
 assist with building the application and which needs to be adapted by the
 vendors so that the correct environment dependent libraries needed to build the
 application are loaded.
-
-## What to Submit
-
-Each benchmark requires the submission of specific files and metrics. The
-[provided Excel sheet](RCC-Benchmark-Report.xlsx) must be populated using the
-required values for metrics obtained in each benchmark.
-
-**RCC staff must be able to reproduce the builds and runs using the provided
-information.**
 
 ## License
 
