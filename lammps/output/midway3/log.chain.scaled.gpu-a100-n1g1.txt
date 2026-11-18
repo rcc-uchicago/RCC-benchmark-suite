@@ -1,0 +1,121 @@
+LAMMPS (29 Aug 2024)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-16.796 -16.796 -16.796) to (16.796 16.796 16.796)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  32000 atoms
+  reading velocities ...
+  32000 velocities
+  scanning bonds ...
+  1 = max bonds/atom
+  orthogonal box = (-16.796 -16.796 -16.796) to (16.796 16.796 16.796)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  31680 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.007 seconds
+  read_data CPU = 0.248 seconds
+Replication is creating a 2x2x2 = 8 times larger system...
+  orthogonal box = (-16.796 -16.796 -16.796) to (50.388 50.388 50.388)
+  1 by 1 by 1 MPI processor grid
+  256000 atoms
+  253440 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.052 seconds
+  replicate CPU = 0.080 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- GPU package (short-range, long-range and three-body potentials): doi:10.1016/j.cpc.2010.12.021, doi:10.1016/j.cpc.2011.10.012, doi:10.1016/j.cpc.2013.08.002, doi:10.1016/j.commatsci.2014.10.068, doi:10.1016/j.cpc.2016.10.020, doi:10.3233/APC200086
+- Type Label Framework: https://doi.org/10.1021/acs.jpcb.3c08419
+The log file lists these citations in BibTeX format.
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+
+--------------------------------------------------------------------------
+- Using acceleration for lj/cut:
+-  with 1 proc(s) per device.
+-  with 1 thread(s) per proc.
+-  Horizontal vector operations: ENABLED
+-  Shared memory system: No
+--------------------------------------------------------------------------
+Device 0: NVIDIA A100-PCIE-40GB, 108 CUs, 39/39 GB, 1.4 GHZ (Mixed Precision)
+--------------------------------------------------------------------------
+
+Initializing Device and compiling on process 0...Done.
+Initializing Device 0 on core 0...Done.
+
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.012
+WARNING: Communication cutoff 1.52 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/src/comm.cpp:730)
+Per MPI rank memory allocation (min/avg/max) = 85.58 | 85.58 | 85.58 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0.97027119     0.44484089     20.494523      22.394765      4.6721843    
+       100   0.97452761     0.43997547     20.504226      22.405987      4.6681506    
+Loop time of 2.65708 on 1 procs for 100 steps with 256000 atoms
+
+Performance: 39020.300 tau/day, 37.635 timesteps/s, 9.635 Matom-step/s
+99.2% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.64508    | 0.64508    | 0.64508    |   0.0 | 24.28
+Bond    | 0.57012    | 0.57012    | 0.57012    |   0.0 | 21.46
+Neigh   | 0.021655   | 0.021655   | 0.021655   |   0.0 |  0.81
+Comm    | 0.27694    | 0.27694    | 0.27694    |   0.0 | 10.42
+Output  | 0.00078352 | 0.00078352 | 0.00078352 |   0.0 |  0.03
+Modify  | 1.025      | 1.025      | 1.025      |   0.0 | 38.57
+Other   |            | 0.1175     |            |       |  4.42
+
+Nlocal:         256000 ave      256000 max      256000 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          36335 ave       36335 max       36335 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Ave special neighs/atom = 1.98
+Neighbor list builds = 25
+Dangerous builds = 0
+
+
+---------------------------------------------------------------------
+      Device Time Info (average): 
+---------------------------------------------------------------------
+Data Transfer:   0.0896 s.
+Neighbor copy:   0.0461 s.
+Neighbor build:  0.0142 s.
+Force calc:      0.0088 s.
+Device Overhead: 0.0042 s.
+CPU Neighbor:    0.1512 s.
+CPU Cast/Pack:   0.1748 s.
+CPU Driver_Time: 0.0015 s.
+CPU Idle_Time:   0.0004 s.
+Average split:   1.0000.
+Max Mem / Proc:  80.74 MB.
+Prefetch mode:   None.
+Vector width:    32.
+Lanes / atom:    4.
+Pair block:      256.
+Neigh block:     128.
+Neigh mode:      Hybrid (binning on host) with subgroup support
+---------------------------------------------------------------------
+
+Total wall time: 0:00:03
